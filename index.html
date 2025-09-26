@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div class="container">
@@ -27,26 +28,42 @@
             </ul>
           </nav>
           <div class="headerActions">
-            <button><img src="./images/searchIcon.png" /></button>
+            <button class="searchBtn">
+              <img
+                src="./images/searchIcon.png"
+                alt="search-icon"
+                height="16px"
+                width="16px"
+              />
+            </button>
             <button class="login">Login / Register</button>
             <button class="upload">Upload Property</button>
           </div>
-        </div>    
+        </div>
       </header>
 
       <section>
-        <div clas="heroSection">
-          <div>
-            <h1>Find Your Next Home Directly From Owners</h1>
-            <p>
+        <div class="heroSection">
+          <div class="heroText">
+            <h3 class="heroHeading">Find Your Next Home Directly From Owners</h3>
+            <p class="heroPara">
               No agent fees, just direct connections with property owners
               leaving their apartments in Nigeria.
             </p>
           </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div >
+            <div>
+              <p>
+                <img src="./images/location.svg" />&nbsp;&nbsp;Enter state or
+                city
+              </p>
+            </div>
+            <div>
+              <p>Any type</p>
+            </div>
+            <div>
+              <p><span>Price:</span>&nbsp;₦0 - ₦1,000,000</p>
+            </div>
           </div>
         </div>
       </section>
