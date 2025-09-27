@@ -3,20 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
-
 header {
-  width: 100%;
+  max-width: 1440px;
+  width: 90%;
+  margin-inline: auto;
   padding-block: 20px;
   height: 80px;
-  position: sticky;
   margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 16px #0000000A;
 }
-
 .container1 {
   max-width: 1280px;
   margin: 0 auto;
@@ -25,12 +31,13 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .logo a {
   text-decoration: none;
   color: black;
+  font-family: "Inter Variable", sans-serif;
+  font-size: 23.25px;
+  font-style: normal;
 }
-
 .logoSpan {
   color: #0080ff;
 }
@@ -40,26 +47,31 @@ header {
   gap: 2rem;
   list-style: none;
   font-size: 14px;
+  font-family: 'Inter Variable', sans-serif;
 }
-
 .navList a {
   text-decoration: none;
-  color: black;
+  color: #64748B;
 }
-
+.navList a:hover {
+  color: #000;
+}
 .headerActions {
   display: flex;
   max-width: 352px;
   gap: 1rem;
   justify-content: space-between;
 }
-
 .searchBtn {
   padding: 12px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
-
+.searchBtn:hover {
+  background-color: whitesmoke;
+  border-radius: 40%;
+}
 .login {
   border: 1px #e2e8f0 solid;
   padding-inline: 17px;
@@ -67,9 +79,14 @@ header {
   padding-bottom: 10.5px;
   border-radius: 14px;
   background-color: transparent;
+  font-family: 'Inter Variable', sans-serif;
+  font-size: 14px;
+  font-style: normal;
   cursor: pointer;
 }
-
+.login:hover {
+  background-color: whitesmoke;
+}
 .upload {
   border: none;
   padding-inline: 16px;
@@ -78,12 +95,18 @@ header {
   border-radius: 14px;
   background-color: #0080ff;
   color: #ffffff;
+  font-family: 'Inter Variable', sans-serif;
+  font-size: 14px;
+  font-style: normal;
   cursor: pointer;
+}
+.upload:hover {
+  background-color: #00f;
 }
 .section2 {
   width: 100%;
   height: 380px;
-  background: linear-gradient(to bottom, #EFF6FF, #EFF6FF00);
+  background: linear-gradient(to bottom, #eff6ff, #eff6ff00);
   padding-top: 96px;
   display: flex;
   flex-direction: column;
@@ -93,121 +116,124 @@ header {
 .mission-span {
   color: #0080ff;
 }
-.section2-text h4{
+.section2-text h4 {
   max-width: 768px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 45px;
-  color: #16181D;
+  color: #16181d;
   margin-bottom: 24px;
   height: 48px;
   margin-inline: auto;
 }
 .section2-para {
   max-width: 686px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #64748B;
+  color: #64748b;
   text-align: center;
   margin-inline: auto;
 }
 .section3 {
-  width: 100%;
+  width: 85%;
   height: 472px;
   margin-top: 96px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 55px;
   margin: auto;
 }
 .section3 h5 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 33.89px;
-  color: #16181D;
+  color: #16181d;
   line-height: 40px;
   letter-spacing: 0%;
   margin-bottom: 16px;
   width: 584px;
 }
 .section3 .para {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #64748B;
+  color: #64748b;
   width: 584px;
   margin-bottom: 16px;
 }
 .section3 .para1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #64748B;
+  color: #64748b;
   width: 584px;
   margin-bottom: 48px;
 }
 .section3 .param {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #64748B;
+  color: #64748b;
   width: 584px;
   margin-bottom: 0px;
 }
 .vision-card {
-  background: linear-gradient(to bottom, #0080FF33, #60A5FA33);
+  background: linear-gradient(to bottom, #0080ff33, #60a5fa33);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
-  width: 584px;
+  width: 50%;
   height: 438px;
   border-radius: 16px;
+}
+.story-card {
+  width: 50%;
 }
 .main-vision-card {
   width: 384px;
   height: 250px;
-  background: #FFFFFFB2;
+  background: #ffffffb2;
   border-radius: 12px;
   padding: 33px;
   border: 1px;
   text-align: center;
-  box-shadow: 0px, 8px, 32px, #0000000F;
+  box-shadow: 0px 8px 32px #0000000f;
 }
 .main-vision-card h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 23.25px;
   line-height: 32px;
   letter-spacing: 0%;
-  color: #16181D;
+  color: #16181d;
   margin-bottom: 16px;
 }
 .main-vision-card p {
   width: 321px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #16181D;
+  color: #16181d;
   margin-bottom: 24px;
   text-align: auto;
 }
 .guide-btn {
   padding: 9.5px, 16px, 10.5px, 16px;
-  font-family: 'Inter', sans-serif;
-  background: #0080FF;
+  font-family: "Inter", sans-serif;
+  background: #0080ff;
   border-radius: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   cursor: pointer;
   width: 163px;
@@ -215,7 +241,7 @@ header {
   transition: 0.3s ease-in-out;
 }
 .guide-btn:hover {
-  background: #005FCC;
+  background: #005fcc;
 }
 .section4 {
   display: flex;
@@ -223,34 +249,183 @@ header {
   gap: 24px;
   align-items: center;
   width: 100%;
-  height: 310px; 
-  background-color: #F7FAFD;
+  height: 310px;
+  background-color: #f7fafd;
   margin-top: 96px;
 }
 .section4-card {
   width: 286px;
   height: 118px;
   border-radius: 16px;
-  border: 1px solid #FFFFFF33;
+  border: 1px solid #ffffff33;
   padding: 25px;
   gap: 8px;
-  box-shadow: 0px, 4px, 16px, #0000000A;
-  background-color: #FFFFFFCC;
+  box-shadow: 0px, 4px, 16px, #0000000a;
+  background-color: #ffffffcc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .section4 h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 34.45px;
   line-height: 40px;
   letter-spacing: 0%;
-  color: #0080FF;
+  color: #0080ff;
   margin-bottom: 8px;
 }
 .section4 p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #64748b;
+  letter-spacing: 0%;
+}
+.section5 {
+  width: 100%;
+  height: 374px;
+  margin-top: 96px;
+}
+.section5-text {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section5-text h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 33.33px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: #16181D;
+  margin-bottom: 16px;
+}
+.section5-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #64748B;
+}
+.values-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.value-card {
+  width: 384px;
+  height: 242px;
+  border-radius: 16px;
+  border: 1px solid #FFFFFF33;
+  background-color: #FFFFFFCC;
+  box-shadow: 0px 4px 16px #0000000A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+  justify-content: center;
+}
+.value-card img {
+  margin-bottom: 24px;
+  align-self: center;
+  object-fit: cover;
+}
+.value-card h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 19.84px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #16181D;
+  margin-bottom: 12px;
+}
+.value-card p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #64748B;
+  width: 318px;
+}
+.section6 {
+  padding-top: 96px;
+  width: 100%;
+  height: 486px;
+  margin-top: 96px;
+}
+.section6-text {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section6-text h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 33.47px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: #16181D;
+  margin-bottom: 16px;
+}
+.section6-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #64748B;
+}
+.team-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.team-card {
+  width: 286px;
+  height: 258px;
+  border-radius: 16px;
+  border: 1px solid #FFFFFF33;
+  background-color: #FFFFFFCC;
+  box-shadow: 0px 4px 16px #0000000A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+  justify-content: center;
+  padding: 16px 8px;
+}
+.team-card img {
+  margin-bottom: 16px;
+  align-self: center;
+  object-fit: cover;
+}
+.team-card h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17.72px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #16181D;
+}
+.team-card h6 {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #64748B;
   letter-spacing: 0%;
+  color: #0080FF;
+  margin-bottom: 8px;
+}
+.team-card p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #64748B;
 }
