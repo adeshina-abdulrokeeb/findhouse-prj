@@ -1,72 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FindHouse</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="container1">
-          <div class="logo">
-            <a href="./index.html">Find<span class="logoSpan">House</span></a>
-          </div>
-          <nav class="mainNav">
-            <ul class="navList">
-              <li><a href="">Home</a></li>
-              <li><a href="">Listings</a></li>
-              <li><a href="">How it works</a></li>
-              <li><a href="">About</a></li>
-            </ul>
-          </nav>
-          <div class="headerActions">
-            <button class="searchBtn">
-              <img
-                src="./images/searchIcon.png"
-                alt="search-icon"
-                height="16px"
-                width="16px"
-              />
-            </button>
-            <button class="login">Login / Register</button>
-            <button class="upload">Upload Property</button>
-          </div>
-        </div>
-      </header>
 
-      <section>
-        <div class="heroSection">
-          <div class="heroText">
-            <h3 class="heroHeading">Find Your Next Home Directly From Owners</h3>
-            <p class="heroPara">
-              No agent fees, just direct connections with property owners
-              leaving their apartments in Nigeria.
-            </p>
-          </div>
-          <div >
-            <div>
-              <p>
-                <img src="./images/location.svg" />&nbsp;&nbsp;Enter state or
-                city
-              </p>
-            </div>
-            <div>
-              <p>Any type</p>
-            </div>
-            <div>
-              <p><span>Price:</span>&nbsp;₦0 - ₦1,000,000</p>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="container1">
+        <div class="logo">
+          <a href="./index.html">Find<span class="logoSpan">House</span></a>
         </div>
-      </section>
+        <nav class="mainNav">
+          <ul class="navList">
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./listings.html">Listings</a></li>
+            <li><a href="./workings.html">How it works</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+        <div class="headerActions">
+          <button class="searchBtn">
+            <img src="./images/searchIcon.png" alt="search-icon" height="16px" width="16px" />
+          </button>
+          <button class="login">Login / Register</button>
+          <button class="upload">Upload Property</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Find Your Next Home Directly From Owners</h1>
+        <p>No agent fees, just direct connections with property owners leaving their apartments in Nigeria.</p>
+      </div>
+      <div class="hero-form">
+        <form class="search-form">
+          <input type="text" placeholder="Enter state or city" class="location-input">
+          <select class="property-type-select">
+            <option>Any Type</option>
+            <option>Apartment</option>
+            <option>Duplex</option>
+            <option>Bungalow</option>
+            <option>Skyscraper</option>
+          </select>
+          <select class="price-range-select">
+            <option>Price: ₦0 - ₦1,000,000</option>
+            <option>₦1,000,000 - ₦10,000,000</option>
+            <option>₦10,000,000 - ₦30,000,000</option>
+            <option>₦30,000,000 - ₦50,000,000</option>
+            <option>₦50,000,000 - ₦100,000,000</option>
+          </select>
+          <button type="submit" class="form-btn"><img src="./images/searchIcon.png" alt="search-icon" height="16px"
+              width="16px" class="form-btn-img">Search</button>
+          <div>
+        </form>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <h2>2,500+</h2>
+          <p>Homes Listed</p>
+        </div>
+        <div class="stat-card">
+          <h2>10,000+</h2>
+          <p>Users Active</p>
+        </div>
+        <div class="stat-card">
+          <h2>20+</h2>
+          <p>Cities Covered</p>
+        </div>
+        <div class="stat-card">
+          <h2>₦500M+</h2>
+          <p>Transactions</p>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="section3">
+    <div class="section3-text">
+      <h2>Recent Properties</h2>
+      <p>Explore some of the latest properties listed to our platform.</p>
     </div>
-  </body>
+
+    <div class="property-cards">
+      <div class="property-card">
+        <div><img src="./images/property_1.png" alt="property-image" width="284px" height="213px"></div>
+        <h3>1 Bedroom</h3>
+        <p>Abeokuta, Ogun</p>
+        <div>
+          <h4>₦500,001 <span>/ year</span></h4>
+          <p>0 bed 0 bath</p>
+        </div>
+      </div>
+      <div class="property-card">
+        <div><img src="./images/property_2.png" alt="property-image" width="284px" height="213px"></div>
+        <h3>3 Bedrooms</h3>
+        <p>Abeokuta, Ogun</p>
+        <div>
+          <h4>₦3,000,000 <span>/ year</span></h4>
+          <p>0 bed 0 bath</p>
+        </div>
+      </div>
+      <div class="property-card">
+        <div><img src="./images/property_3.png" alt="property-image" width="284px" height="213px"></div>
+        <h3>3 Bedrooms</h3>
+        <p>No Mans Land, Kano</p>
+        <div>
+          <h4>₦1,500,000 <span>/ year</span></h4>
+          <p>0 bed 0 bath</p>
+        </div>
+      </div>
+      <div class="property-card">
+        <div><img src="./images/property_4.png" alt="property-image" width="284px" height="213px"></div>
+        <h3>4 Bedrooms</h3>
+        <p>Abeokuta, Ogun</p>
+        <div>
+          <h4>₦50,000,000 <span>/ year</span></h4>
+          <p>0 bed 0 bath</p>
+        </div>
+      </div>
+      <div class="property-card">
+        <div><img src="./images/property_5.png" alt="property-image" width="284px" height="213px"></div>
+        <h3>1 Room And Parlour</h3>
+        <p>Lekki, Lagos</p>
+        <div>
+          <h4>₦3,000,000 <span>/ year</span></h4>
+          <p>1 bed 2 bath</p>
+        </div>
+      </div>
+      <div class="property-card">
+        <div><img src="./images/property_6.png" alt="property-image" width="284px" height="213px"></div>
+        <h3>2 Bedroom Flat</h3>
+        <p>Abeokuta, Ogun</p>
+        <div>
+          <h4>₦10,000,000 <span>/ year</span></h4>
+          <p>2 bed 2 bath</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <button>View All Properties <img src="./images/right_arrow.png" alt="right-arrow" width="16px"
+          height="16px"></button>
+    </div>
+
+  </section>
+
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>

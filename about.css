@@ -5,12 +5,13 @@
 }
 .container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 header {
   max-width: 1440px;
-  width: 90%;
-  margin-inline: auto;
+  width: 100%;
+  margin: auto;
   padding-block: 20px;
   height: 80px;
   margin-bottom: 20px;
@@ -21,7 +22,7 @@ header {
   border-bottom: 1px solid whitesmoke;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
-  box-shadow: 0 4px 16px #0000000A;
+  box-shadow: 0 4px 16px #0000000a;
 }
 .container1 {
   max-width: 1280px;
@@ -33,8 +34,11 @@ header {
 }
 .logo a {
   text-decoration: none;
-  color: black;
-  font-family: "Inter Variable", sans-serif;
+  color: #16181D;
+  font-family: "Inter", sans-serif;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0%;
   font-size: 23.25px;
   font-style: normal;
 }
@@ -44,17 +48,20 @@ header {
 .navList {
   display: flex;
   max-width: 317px;
-  gap: 2rem;
+  gap: 32px;
   list-style: none;
   font-size: 14px;
-  font-family: 'Inter Variable', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .navList a {
   text-decoration: none;
-  color: #64748B;
+  color: #64748b;
 }
 .navList a:hover {
   color: #000;
+}
+.navList a.active {
+  color: #0080ff;
 }
 .headerActions {
   display: flex;
@@ -79,7 +86,7 @@ header {
   padding-bottom: 10.5px;
   border-radius: 14px;
   background-color: transparent;
-  font-family: 'Inter Variable', sans-serif;
+  font-family: "Inter Variable", sans-serif;
   font-size: 14px;
   font-style: normal;
   cursor: pointer;
@@ -95,7 +102,7 @@ header {
   border-radius: 14px;
   background-color: #0080ff;
   color: #ffffff;
-  font-family: 'Inter Variable', sans-serif;
+  font-family: "Inter Variable", sans-serif;
   font-size: 14px;
   font-style: normal;
   cursor: pointer;
@@ -299,7 +306,7 @@ header {
   font-size: 33.33px;
   line-height: 40px;
   letter-spacing: 0%;
-  color: #16181D;
+  color: #16181d;
   margin-bottom: 16px;
 }
 .section5-text p {
@@ -308,9 +315,9 @@ header {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0%;
-  color: #64748B;
+  color: #64748b;
 }
-.values-cards{
+.values-cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,13 +327,13 @@ header {
   width: 384px;
   height: 242px;
   border-radius: 16px;
-  border: 1px solid #FFFFFF33;
-  background-color: #FFFFFFCC;
-  box-shadow: 0px 4px 16px #0000000A;
+  border: 1px solid #ffffff33;
+  background-color: #ffffffcc;
+  box-shadow: 0px 4px 16px #0000000a;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; 
+  text-align: center;
   justify-content: center;
 }
 .value-card img {
@@ -340,7 +347,7 @@ header {
   font-size: 19.84px;
   line-height: 28px;
   letter-spacing: 0%;
-  color: #16181D;
+  color: #16181d;
   margin-bottom: 12px;
 }
 .value-card p {
@@ -349,7 +356,7 @@ header {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #64748B;
+  color: #64748b;
   width: 318px;
 }
 .section6 {
@@ -368,7 +375,7 @@ header {
   font-size: 33.47px;
   line-height: 40px;
   letter-spacing: 0%;
-  color: #16181D;
+  color: #16181d;
   margin-bottom: 16px;
 }
 .section6-text p {
@@ -377,7 +384,7 @@ header {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0%;
-  color: #64748B;
+  color: #64748b;
 }
 .team-cards {
   display: flex;
@@ -389,13 +396,13 @@ header {
   width: 286px;
   height: 258px;
   border-radius: 16px;
-  border: 1px solid #FFFFFF33;
-  background-color: #FFFFFFCC;
-  box-shadow: 0px 4px 16px #0000000A;
+  border: 1px solid #ffffff33;
+  background-color: #ffffffcc;
+  box-shadow: 0px 4px 16px #0000000a;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; 
+  text-align: center;
   justify-content: center;
   padding: 16px 8px;
 }
@@ -405,27 +412,247 @@ header {
   object-fit: cover;
 }
 .team-card h5 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 17.72px;
   line-height: 28px;
   letter-spacing: 0%;
-  color: #16181D;
+  color: #16181d;
 }
 .team-card h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
-  color: #0080FF;
+  color: #0080ff;
   margin-bottom: 8px;
 }
 .team-card p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
-  color: #64748B;
+  color: #64748b;
+}
+.section7 {
+  background-color: #f7fafd;
+  margin-top: 96px;
+  padding-top: 96px;
+  width: 100%;
+  height: 490px;
+}
+.section7-text {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section7-text h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 33.05px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: #16181d;
+  margin-bottom: 16px;
+}
+.section7-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #64748b;
+  width: 428px;
+  margin-inline: auto;
+}
+.cities-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 24px 24px;
+  justify-items: center;
+  width: 90%;
+  height: 138px;
+  border-radius: 16px;
+  padding: 33px;
+  background-color: #ffffffcc;
+  border: 1px solid #ffffff33;
+  box-shadow: 0px 4px 16px #0000000a;
+  margin: auto;
+}
+.cities-list p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #16181d;
+}
+.section8 {
+  margin-top: 96px;
+  width: 100%;
+  height: 310px;
+}
+.section8-text {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.section8-text h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 33.61px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: #16181d;
+  margin-bottom: 24px;
+}
+.section8-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #64748b;
+  width: 672px;
+  margin-inline: auto;
+}
+.section8-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.section8-buttons .btn1 {
+  background-color: #0080ff;
+  padding: 11.5px, 32px, 12.5px, 32px;
+  border-radius: 14px;
+  height: 44px;
+  border: 1px solid #0080ff;
+  width: 169px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+.section8-buttons .btn1:hover {
+  background-color: #00f;
+}
+.section8-buttons .btn2 {
+  background-color: #ffffff;
+  color: #16181d;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  cursor: pointer;
+  width: 186px;
+  height: 44px;
+  border: 1px solid #e2e8f0;
+  padding: 11.5px, 33px, 12.5px, 33px;
+  border-radius: 14px;
+}
+.section8-buttons .btn2:hover {
+  background-color: #f7fafd;
+}
+.container6 {
+  padding: 32px;
+  width: 88.89%;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 16.5px;
+}
+.description p {
+  font-family: "Inter Variable", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(100, 116, 139, 1);
+  width: 274px;
+}
+.descriptionicons {
+  display: flex;
+  gap: 16px;
+}
+.footer-links h4 {
+  font-family: "Inter Variable", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.footer-links li,
+.contacts p {
+  font-family: "Inter Variable", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(100, 116, 139, 1);
+  list-style: none;
+  cursor: pointer;
+}
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contacts div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+footer {
+  background-color: rgba(247, 250, 253, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 64px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+.contdiv {
+  margin-bottom: 12px;
+}
+.footer-links li:hover {
+  color: rgba(0, 128, 255, 1);
+}
+.last-div li {
+  font-family: "Inter Variable", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(100, 116, 139, 1);
+  list-style: none;
+  cursor: pointer;
+}
+.last-div ul {
+  display: flex;
+  gap: 24px;
+}
+.organization {
+  font-family: "Inter Variable", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(100, 116, 139, 1);
+}
+.last-div {
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+}
+.last-cont {
+  margin-top: 97px;
+  border-top: 1px rgba(226, 232, 240, 1) solid;
 }
