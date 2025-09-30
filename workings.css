@@ -578,6 +578,11 @@ nav a.active:hover {
 .descriptionicons {
   display: flex;
   gap: 16px;
+  cursor: pointer;
+}
+
+.firsticon:hover svg path, .secondicon:hover svg path, .thirdicon:hover svg path{
+  stroke: rgba(0, 128, 255, 1);
 }
 
 .footer-links h4 {
@@ -637,7 +642,6 @@ footer {
   color: rgba(100, 116, 139, 1);
 }
 
-
 .last-div li {
   font-family: "Inter Variable", sans-serif;
   font-size: 14px;
@@ -671,6 +675,7 @@ footer {
   margin-top: 97px;
   border-top: 1px rgba(226, 232, 240, 1) solid;
 }
+
 
 @media (max-width: 1250px) {
 .readybutton {
