@@ -678,7 +678,31 @@ footer {
 
 
 @media (max-width: 1250px) {
-.readybutton {
+
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #card {
+   width: 69%;
+   margin-inline:auto;
+   max-width: 500px;
+  }
+  .card1 p {
+    width: 80%;
+    text-align: center;
+    margin-inline: auto;
+  }
+   .nav-links {
+    display: none;
+  }
+  .header-actions {
+    display: none;
+  }
+  .readybutton {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -692,7 +716,7 @@ footer {
 
   }
   .readycontainer {
-    width: 50%;
+    width: 70%;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -708,23 +732,43 @@ align-items: center;
     gap: 32px;
 
   }
+   .container4 {
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+   .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .last-div {
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-@media (max-width: 800px) {
+
+
+@media (max-width: 600px) {
   .nav-links {
+    display: none;
+  }
+  .header-actions {
     display: none;
   }
   .hero-section {
     width: 92%;
+    margin-top: 112px;
   }
   .hero-section h2 {
     font-size: 33.89px;
   }
   .hero-section p {
     width: 100%;
-  }
-  .header-actions {
-    display: none;
   }
   .browse-btn {
     flex-direction: column;
