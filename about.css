@@ -571,6 +571,7 @@ header {
   flex-direction: column;
   gap: 16.5px;
 }
+
 .description p {
   font-family: "Inter Variable", sans-serif;
   font-size: 14px;
@@ -579,10 +580,17 @@ header {
   color: rgba(100, 116, 139, 1);
   width: 274px;
 }
+
 .descriptionicons {
   display: flex;
   gap: 16px;
+  cursor: pointer;
 }
+
+.firsticon:hover svg path, .secondicon:hover svg path, .thirdicon:hover svg path{
+  stroke: rgba(0, 128, 255, 1);
+}
+
 .footer-links h4 {
   font-family: "Inter Variable", sans-serif;
   font-size: 16px;
@@ -590,6 +598,7 @@ header {
   font-weight: 400;
   margin-bottom: 16px;
 }
+
 .footer-links li,
 .contacts p {
   font-family: "Inter Variable", sans-serif;
@@ -600,16 +609,19 @@ header {
   list-style: none;
   cursor: pointer;
 }
+
 .footer-links ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 .contacts div {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 footer {
   background-color: rgba(247, 250, 253, 1);
   display: flex;
@@ -617,16 +629,25 @@ footer {
   align-items: center;
   padding-block: 64px;
 }
+
 .footer-links {
   display: flex;
   justify-content: space-between;
 }
+
 .contdiv {
   margin-bottom: 12px;
 }
-.footer-links li:hover {
+
+.footer-links a:hover {
   color: rgba(0, 128, 255, 1);
 }
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(100, 116, 139, 1);
+}
+
 .last-div li {
   font-family: "Inter Variable", sans-serif;
   font-size: 14px;
@@ -636,10 +657,12 @@ footer {
   list-style: none;
   cursor: pointer;
 }
+
 .last-div ul {
   display: flex;
   gap: 24px;
 }
+
 .organization {
   font-family: "Inter Variable", sans-serif;
   font-size: 14px;
@@ -647,12 +670,18 @@ footer {
   font-weight: 400;
   color: rgba(100, 116, 139, 1);
 }
+
 .last-div {
   margin-top: 33px;
   display: flex;
   justify-content: space-between;
 }
+
 .last-cont {
   margin-top: 97px;
   border-top: 1px rgba(226, 232, 240, 1) solid;
+}
+
+.logo span {
+  color: #0080ff;
 }

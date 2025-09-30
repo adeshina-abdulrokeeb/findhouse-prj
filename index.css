@@ -341,13 +341,27 @@ header {
   justify-content: space-between;
   margin-bottom: 32px;
 }
+
+.filter,
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 17px;
+  padding-top: 9.5px;
+  padding-bottom: 10.5px;
+  border: 1px solid rgba(226, 232, 240, 1);
+  border-radius: 14px;
+}
+
 .properties-card {
   width: 284px;
-  border-top-right-radius: 16px;
-  border-top-left-radius: 16px;
+  border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(4px);
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .order {
@@ -398,21 +412,29 @@ header {
   line-height: 20px;
   margin-left: 4px;
 }
-.properties-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-.property-img:hover {
-  transform: scale(1.05);
-}
-.properties-card:hover h4 {
-  color: #0080ff;
-}
 
 .property-img {
   position: relative;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.properties-card h4 {
+  transition: color 0.3s ease;
+}
+
+.properties-card:hover {
+   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.properties-card:hover .img-cont img {
+  transform: scale(1.1);
+}
+
+.properties-card:hover h4 {
+  color: rgba(0, 128, 255, 1);
 }
 
 .img-cont img {
@@ -420,6 +442,7 @@ header {
   width: 100%;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
+  transition: transform 0.4s ease;
 }
 
 .love-icon {
@@ -435,6 +458,36 @@ header {
   position: absolute;
   top: 12px;
   right: 12px;
+}
+
+.heart path {
+  stroke: #64748b;
+  stroke-width: 2;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.heart.favorited path {
+  fill: red;
+  stroke: none;
+}
+
+.heart.animate path {
+  animation: pulse 0.6s ease forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .para {
@@ -454,6 +507,7 @@ header {
   gap: 24px;
   justify-content: space-between;
 }
+
 .view-btn {
   display: flex;
   justify-content: center;
