@@ -89,3 +89,29 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// TYPE DROPDOWN
+const typeCont = document.querySelector('.type-cont');
+const typeBox = typeCont.querySelector('.type-box');
+const typeInput = document.getElementById('typeInput');
+const typeOptions = typeCont.querySelectorAll('.type-menu button');
+
+// toggle open/close
+typeBox.addEventListener('click', () => {
+  typeCont.classList.toggle('open');
+});
+
+// pick option
+typeOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    typeInput.value = option.textContent;
+    typeCont.classList.remove('open');
+  });
+});
+
+// close if clicking outside
+document.addEventListener('click', (e) => {
+  if (!typeCont.contains(e.target)) {
+    typeCont.classList.remove('open');
+  }
+});
+
