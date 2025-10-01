@@ -13,7 +13,6 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
-
 body.no-scroll {
   overflow: hidden;
   width: 100%;
@@ -34,7 +33,6 @@ header {
   box-shadow: 0 4px 16px #0000000a;
   border-bottom: 1px solid whitesmoke;
 }
-
 .container1 {
   max-width: 1280px;
   margin: 0 auto;
@@ -43,7 +41,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .logo a {
   text-decoration: none;
   color: #16181d;
@@ -52,11 +49,9 @@ header {
   font-weight: 400;
   line-height: 32px;
 }
-
 .logoSpan {
   color: #0080ff;
 }
-
 .navList {
   display: flex;
   gap: 32px;
@@ -64,27 +59,22 @@ header {
   font-size: 14px;
   font-family: "Inter", sans-serif;
 }
-
 .navList a {
   text-decoration: none;
   color: #64748b;
 }
-
 .navList a:hover {
   color: #000;
 }
-
 .navList a.active {
   color: #0080ff;
 }
-
 .headerActions {
   display: flex;
   gap: 1rem;
   max-width: 352px;
   justify-content: space-between;
 }
-
 .searchBtn {
   padding: 12px;
   border: none;
@@ -95,7 +85,6 @@ header {
   background-color: whitesmoke;
   border-radius: 40%;
 }
-
 .login {
   border: 1px #e2e8f0 solid;
   padding: 9.5px 17px 10.5px;
@@ -108,7 +97,6 @@ header {
 .login:hover {
   background: whitesmoke;
 }
-
 .upload {
   border: none;
   padding: 9.5px 16px 10.5px;
@@ -122,7 +110,6 @@ header {
 .upload:hover {
   background: #00f;
 }
-
 /* Hamburger */
 .hamburger {
   display: none;
