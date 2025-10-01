@@ -9,6 +9,16 @@
   height: auto;
   margin: 0 auto;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
 header {
   max-width: 1440px;
   width: 100%;
@@ -19,12 +29,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: white;
-  border-bottom: 1px solid whitesmoke;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 16px #0000000a;
+  border-bottom: 1px solid whitesmoke;
 }
+
 .container1 {
   max-width: 1280px;
   margin: 0 auto;
@@ -33,84 +43,87 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo a {
   text-decoration: none;
   color: #16181d;
   font-family: "Inter", sans-serif;
-  line-height: 32px;
-  font-weight: 400;
-  letter-spacing: 0%;
   font-size: 23.25px;
-  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
 }
+
 .logoSpan {
   color: #0080ff;
 }
+
 .navList {
   display: flex;
-  max-width: 317px;
   gap: 32px;
   list-style: none;
   font-size: 14px;
   font-family: "Inter", sans-serif;
 }
+
 .navList a {
   text-decoration: none;
   color: #64748b;
 }
+
 .navList a:hover {
   color: #000;
 }
+
 .navList a.active {
   color: #0080ff;
 }
+
 .headerActions {
   display: flex;
-  max-width: 352px;
   gap: 1rem;
+  max-width: 352px;
   justify-content: space-between;
 }
+
 .searchBtn {
   padding: 12px;
   border: none;
-  background-color: transparent;
+  background: transparent;
   cursor: pointer;
 }
 .searchBtn:hover {
   background-color: whitesmoke;
   border-radius: 40%;
 }
+
 .login {
   border: 1px #e2e8f0 solid;
-  padding-inline: 17px;
-  padding-top: 9.5px;
-  padding-bottom: 10.5px;
+  padding: 9.5px 17px 10.5px;
   border-radius: 14px;
-  background-color: transparent;
+  background: transparent;
   font-family: "Inter Variable", sans-serif;
   font-size: 14px;
-  font-style: normal;
   cursor: pointer;
 }
 .login:hover {
-  background-color: whitesmoke;
+  background: whitesmoke;
 }
+
 .upload {
   border: none;
-  padding-inline: 16px;
-  padding-top: 9.5px;
-  padding-bottom: 10.5px;
+  padding: 9.5px 16px 10.5px;
   border-radius: 14px;
-  background-color: #0080ff;
-  color: #ffffff;
+  background: #0080ff;
+  color: #fff;
   font-family: "Inter Variable", sans-serif;
   font-size: 14px;
-  font-style: normal;
   cursor: pointer;
 }
 .upload:hover {
-  background-color: #00f;
+  background: #00f;
 }
+
+/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -123,7 +136,6 @@ header {
   z-index: 1001;
 }
 .hamburger span {
-  display: block;
   width: 100%;
   height: 3px;
   background: #16181d;
@@ -139,38 +151,26 @@ header {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: none;
-  z-index: 100;
-}
-.overlay.active {
-  display: block;
-}
 @media screen and (max-width: 1024px) {
   .mainNav {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     height: 100vh;
     width: 280px;
     background: #fff;
-    padding-top: 100px;
-    transition: right 0.3s ease-in-out;
-    z-index: 200;
+    padding: 100px 24px 24px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    box-shadow: -4px 0 16px rgba(0,0,0,0.1);
+    transform: translateX(100%);
   }
   .mainNav.active {
-    right: 0;
+    transform: translateX(0);
   }
   .navList {
     flex-direction: column;
     gap: 24px;
-    padding-left: 24px;
   }
   .headerActions {
     display: none;
@@ -178,7 +178,26 @@ header {
   .hamburger {
     display: flex;
   }
+  /* Overlay effect inside nav */
+  .mainNav::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mainNav.active::before {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
+
 .section2 {
   width: 100%;
   height: auto;
