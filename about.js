@@ -9,30 +9,53 @@ links.forEach(link => {
   }
 });
 
+  const hamburger = document.getElementById("hamburger");
+  const mainNav = document.getElementById("mainNav");
 
-const hamburger = document.querySelector('.hamburger');
-const mainNav = document.querySelector('.mainNav');
-const overlay = document.querySelector('.overlay');
+  hamburger.addEventListener("click", () => {
+    const isActive = hamburger.classList.toggle("active");
+    mainNav.classList.toggle("active");
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  mainNav.classList.toggle('active');
-  overlay.classList.toggle('active');
-});
-
-overlay.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  mainNav.classList.remove('active');
-  overlay.classList.remove('active');
-});
-
-document.querySelectorAll('.navList a').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    mainNav.classList.remove('active');
-    overlay.classList.remove('active');
+    if (isActive) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
   });
-});
+
+  // Close nav when clicking backdrop
+  mainNav.addEventListener("click", (e) => {
+    if (e.target === mainNav) {
+      hamburger.classList.remove("active");
+      mainNav.classList.remove("active");
+      document.body.classList.remove("no-scroll");
+    }
+  });
+
+
+// const hamburger = document.querySelector('.hamburger');
+// const mainNav = document.querySelector('.mainNav');
+// const overlay = document.querySelector('.overlay');
+
+// hamburger.addEventListener('click', () => {
+//   hamburger.classList.toggle('active');
+//   mainNav.classList.toggle('active');
+//   overlay.classList.toggle('active');
+// });
+
+// overlay.addEventListener('click', () => {
+//   hamburger.classList.remove('active');
+//   mainNav.classList.remove('active');
+//   overlay.classList.remove('active');
+// });
+
+// document.querySelectorAll('.navList a').forEach(link => {
+//   link.addEventListener('click', () => {
+//     hamburger.classList.remove('active');
+//     mainNav.classList.remove('active');
+//     overlay.classList.remove('active');
+//   });
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".section4-card h3");
