@@ -662,7 +662,58 @@ footer {
   border-top: 1px rgba(226, 232, 240, 1) solid;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+ .property-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+    .nav-links {
+    display: none;
+  }
+  .header-actions {
+    display: none;
+  }
+  .property-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+    form {
+    flex-direction: column;
+    width: 100%;
+  }
+    .container2 {
+    width: 89%;
+   }
+
+  .container2 p {
+ width: 98%;
+  }
+  .prices {
+    border: none;
+  }
+.input-btn {
+  padding: 12px;
+}
+  form button {
+    width: 80%;
+    border-radius: 16px;
+    margin-inline: auto;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .last-div {
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 600px) {
   form {
     flex-direction: column;
     width: 100%;
@@ -697,7 +748,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-  .footer-links {
+  /* .footer-links {
     flex-direction: column;
     gap: 40px;
   }
@@ -706,5 +757,5 @@ footer {
     gap: 16px;
     justify-content: center;
     align-items: center;
-  }
+  } */
 }
