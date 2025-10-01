@@ -405,6 +405,13 @@ header {
 .guide-btn:hover {
   background: #005fcc;
 }
+@media screen and (max-width: 1240px) {
+  .section3 .para,
+  .section3 .para1,
+  .section3 .param {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 1040px) {
   .section3 {
     gap: 32px;
@@ -1100,6 +1107,7 @@ header {
   padding: 96px;
   width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
 .section7-text {
   text-align: center;
@@ -1131,8 +1139,9 @@ header {
   gap: 24px 24px;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 138px;
+  width: 100%;
+  max-width: 90%;
+  height: auto;
   border-radius: 16px;
   padding: 33px;
   background-color: #ffffffcc;
