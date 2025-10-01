@@ -285,6 +285,7 @@ small {
   border-block: none;
   border-left: none;
   outline: none;
+  font-size: 16px;
 }
 
 
@@ -335,25 +336,6 @@ select option {
   color: rgba(100, 116, 139, 1);
 }
 
-/* select {
-  font-family: "Inter Variable", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  appearance: none;
-  font-style: normal;
-  background-image: url("./Assets/dropdown.svg");
-  background-repeat: no-repeat;
-  background-position: right 0px center;
-  border: none;
-  outline: none;
-  width: 75%;
-  display: flex;
-  justify-content: space-between;
-  appearance: none;
-} */
-
-/* price selection */
-
 .prices {
   font-family: "Inter Variable", sans-serif;
   display: flex;
@@ -371,7 +353,7 @@ select option {
 /* dropdown wrapper */
 .dropdown {
   position: relative;
-  width: 250px;
+  width: 95%;
 }
 
 /* input + arrow wrapper */
@@ -379,7 +361,6 @@ select option {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid #ddd; */
   border-radius: 8px;
   padding: 10px 12px;
   cursor: pointer;
@@ -391,9 +372,13 @@ select option {
   border: none;
   outline: none;
   background: transparent;
-  flex: 1;
+  flex: 1 1 auto;       /* allow grow and shrink */
+  min-width: 0; 
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
+   white-space: nowrap;  /* keep text on one line */
+  overflow: hidden;     /* needed for ellipsis */
+  text-overflow: ellipsis;
 }
 
 .dropdown-box {
@@ -434,7 +419,7 @@ select option {
   background: none;
   border: none;
   text-align: left;
-  padding: 12px 16px;
+  padding: 24px 16px;
   font-size: 14px;
   cursor: pointer;
   color: black;
@@ -446,6 +431,75 @@ select option {
 
 /* Show when active */
 .prices.active .dropdown-menu {
+  display: block;
+}
+
+/* any type drop dowm */
+
+/* Container */
+.type-cont {
+  position: relative;
+  width: 100%;
+}
+
+/* Input wrapper */
+.type-box {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.type-box input {
+  flex: 1 1 auto;
+  min-width: 0;              
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.type-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.type-menu li button {
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: left;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+}
+
+.type-menu li button:hover {
+  background: #f3f3f3;
+}
+
+/* Show menu when active */
+.type-cont.open .type-menu {
   display: block;
 }
 
@@ -810,10 +864,16 @@ footer {
   }
     form {
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 20px;
   }
     .container2 {
     width: 89%;
+   }
+   .dropdown-box {
+    width: 100%;
+    justify-content: space-between;
    }
    .input-btn {
     border-bottom-left-radius: 12px;
@@ -888,14 +948,27 @@ footer {
   justify-content: center;
   align-items: center;
 }
-  /* .footer-links {
-    flex-direction: column;
-    gap: 40px;
+
+}
+@media (max-width: 450px) {
+  .dropdown-arrow {
+    display: none;
   }
-  .last-div {
-    flex-direction: column;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-  } */
+.container2 {
+  width: 95%;
+  /* margin-inline: auto; */
+}
+form {
+  width: 100%;
+}
+  /* optional: reduce padding so text has more room */
+  .dropdown-box {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /* keep input truncation (already set) but you can reduce font-size if needed */
+  .dropdown-box input {
+    font-size: 13px;
+  }
 }
