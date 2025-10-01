@@ -508,6 +508,7 @@ nav a.active:hover {
   font-size: 33.75px;
   font-style: normal;
   font-weight: 400;
+  line-height: 36px;
   color: rgba(22, 24, 29, 1);
   margin-bottom: 16px;
 }
@@ -516,6 +517,7 @@ nav a.active:hover {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  line-height: 28px;
   color: rgba(100, 116, 139, 1);
 }
 
@@ -678,10 +680,33 @@ footer {
 
 
 @media (max-width: 1250px) {
+    .container4 {
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+    .cards p {
+    width: 98%;
+    margin: 0 auto;
+  }
+.readycontainer {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
+  .QandA {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+  }
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .cards {
     flex-direction: column;
     gap: 3rem;
@@ -716,7 +741,7 @@ footer {
 
   }
   .readycontainer {
-    width: 70%;
+    /* width: 70%; */
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -844,6 +869,15 @@ align-items: center;
     flex-direction: column;
     gap: 32px;
     width: 92%;
+  }
+  .faq-head h3 {
+font-size: 28.48px;
+width: 217.31px;
+margin-inline: auto;
+  }
+  .faq-head p {
+    width: 80%;
+    margin-inline: auto;
   }
   .Faq-card,
   .Faq-card p {
