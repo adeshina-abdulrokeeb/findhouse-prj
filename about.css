@@ -111,7 +111,7 @@ header {
   background-color: #00f;
 }
 .hamburger {
-  display: none; /* visible only on mobile */
+  display: none; 
   flex-direction: column;
   justify-content: space-between;
   width: 24px;
@@ -129,7 +129,6 @@ header {
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
 }
-/* Morph into X */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -139,8 +138,6 @@ header {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
-/* ---------- Overlay ---------- */
 .overlay {
   position: fixed;
   top: 0; left: 0;
@@ -153,8 +150,6 @@ header {
 .overlay.active {
   display: block;
 }
-
-/* ---------- Mobile Nav ---------- */
 @media screen and (max-width: 768px) {
   .mainNav {
     position: fixed;
@@ -214,6 +209,85 @@ header {
   color: #64748b;
   text-align: center;
   margin-inline: auto;
+}
+@media screen and (max-width: 1240px) {
+  .section2-text h4 {
+    font-size: 40px;
+  }
+  .section2-para {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .section2-text h4 {
+    font-size: 36px;
+  }
+  .section2-para {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section2-text h4 {
+    font-size: 32px;
+  }
+  .section2-para {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section2 {
+    padding-top: 72px;
+    margin-bottom: 72px;
+  }
+  .section2-text h4 {
+    font-size: 28px;
+  }
+  .section2-para {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section2 {
+    padding-top: 60px;
+  }
+  .section2-text h4 {
+    font-size: 26px;
+  }
+  .section2-para {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .section2-text h4 {
+    font-size: 22px;
+  }
+  .section2-para {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section2 {
+    padding-top: 48px;
+    margin-bottom: 60px;
+  }
+  .section2-text h4 {
+    font-size: 20px;
+  }
+  .section2-para {
+    font-size: 12.5px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .section2-text h4 {
+    font-size: 18px;
+  }
+  .section2-para {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 .section3 {
   width: 85%;
@@ -322,6 +396,127 @@ header {
 .guide-btn:hover {
   background: #005fcc;
 }
+@media screen and (max-width: 1040px) {
+  .section3 {
+    gap: 32px;
+  }
+  .story-card h5 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .section3 .para,
+  .section3 .para1,
+  .section3 .param {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .story-card,
+  .vision-card {
+    width: 100%;
+  }
+  .story-card h5 {
+    width: 100%;
+  }
+  .main-vision-card p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section3 {
+    width: 90%;
+    margin-top: 64px;
+  }
+  .story-card h5 {
+    font-size: 24px;
+  }
+  .section3 .para,
+  .section3 .para1,
+  .section3 .param {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .guide-btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .story-card h5 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .section3 .para,
+  .section3 .para1,
+  .section3 .param {
+    font-size: 14px;
+  }
+  .main-vision-card {
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .section3 {
+    width: 95%;
+    gap: 24px;
+  }
+  .story-card h5 {
+    font-size: 20px;
+  }
+  .guide-btn {
+    font-size: 14px;
+    height: 38px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .story-card h5 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .section3 .para,
+  .section3 .para1,
+  .section3 .param {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .story-card h5 {
+    font-size: 16px;
+  }
+  .section3 .para,
+  .section3 .para1,
+  .section3 .param {
+    font-size: 12px;
+  }
+  .main-vision-card p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .section3 {
+    width: 100%;
+    margin-top: 48px;
+  }
+  .story-card h5 {
+    font-size: 15px;
+  }
+  .section3 .para,
+  .section3 .para1,
+  .section3 .param {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .guide-btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+}
 .section4 {
   display: flex;
   justify-content: space-evenly;
@@ -346,6 +541,11 @@ header {
   justify-content: center;
   text-align: center;
 }
+.section4-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 32px #0000000f;
+  transition: transform 0.3s ease-in-out;
+}
 .section4 h3 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -362,6 +562,95 @@ header {
   line-height: 20px;
   color: #64748b;
   letter-spacing: 0%;
+}
+@media screen and (max-width: 1240px) {
+  .section4 { 
+    gap: 20px;
+   }
+}
+@media screen and (max-width: 1040px) {
+  .section4 { 
+    justify-content: center; 
+    gap: 28px;
+   }
+}
+@media screen and (max-width: 900px) {
+  .section4 {
+    height: auto;
+  }
+  .section4-card { 
+    max-width: 45%;
+     }
+}
+@media screen and (max-width: 768px) {
+  .section4 {
+    height: auto;
+  }
+  .section4-card {
+     max-width: 48%;
+     }
+  .section4 h3 {
+     font-size: 28px;
+     }
+}
+@media screen and (max-width: 600px) {
+  .section4 {
+     flex-direction: column;
+      align-items: center;
+      height: auto;
+     }
+  .section4-card {
+     max-width: 90%; 
+    }
+}
+@media screen and (max-width: 520px) {
+  .section4 {
+    height: auto;
+  }
+  .section4 h3 { 
+    font-size: 26px;
+   }
+}
+@media screen and (max-width: 475px) {
+  .section4 {
+    height: auto;
+  }
+  .section4-card {
+     padding: 20px;
+     }
+}
+@media screen and (max-width: 425px) {
+  .section4 {
+    height: auto;
+  }
+  .section4 h3 {
+     font-size: 24px;
+     }
+  .section4 p {
+     font-size: 13px;
+     }
+}
+@media screen and (max-width: 375px) {
+  .section4 {
+    height: auto;
+  }
+  .section4-card { 
+    max-width: 100%;
+     padding: 18px;
+     }
+  .section4 h3 { font-size: 22px; }
+}
+@media screen and (max-width: 300px) {
+  .section4 {
+    height: auto;
+  }
+  .section4 h3 {
+     font-size: 20px;
+      line-height: 28px;
+     }
+  .section4 p { 
+    font-size: 12px;
+   }
 }
 .section5 {
   width: 100%;
@@ -394,6 +683,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 32px;
+  flex-wrap : wrap;
 }
 .value-card {
   width: 384px;
@@ -407,11 +697,21 @@ header {
   align-items: center;
   text-align: center;
   justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.value-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
 }
 .value-card img {
   margin-bottom: 24px;
   align-self: center;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.value-card:hover img {
+  transform: scale(1.1);
 }
 .value-card h6 {
   font-family: "Inter", sans-serif;
@@ -430,6 +730,94 @@ header {
   letter-spacing: 0%;
   color: #64748b;
   width: 318px;
+}
+@media (max-width: 1240px) {
+  .values-cards {
+    gap: 24px;
+  }
+  .value-card {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .values-cards {
+    gap: 20px;
+  }
+  .value-card {
+    flex: 1 1 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section5-text h4 {
+    font-size: 28px;
+  }
+  .section5-text p {
+    font-size: 16px;
+  }
+  .value-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .values-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .value-card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 520px) {
+  .section5-text h4 {
+    font-size: 24px;
+  }
+  .section5-text p {
+    font-size: 15px;
+  }
+  .value-card {
+    padding: 24px 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .section5-text h4 {
+    font-size: 22px;
+  }
+  .value-card h6 {
+    font-size: 18px;
+  }
+  .value-card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section5-text h4 {
+    font-size: 20px;
+  }
+  .value-card {
+    padding: 20px 14px;
+  }
+}
+
+@media (max-width: 300px) {
+  .section5-text h4 {
+    font-size: 18px;
+  }
+  .section5-text p {
+    font-size: 13px;
+  }
+  .value-card h6 {
+    font-size: 16px;
+  }
+  .value-card p {
+    font-size: 13px;
+  }
 }
 .section6 {
   padding-top: 96px;
