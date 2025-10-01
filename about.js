@@ -9,6 +9,7 @@ links.forEach(link => {
   }
 });
 
+
 const hamburger = document.querySelector('.hamburger');
 const mainNav = document.querySelector('.mainNav');
 const overlay = document.querySelector('.overlay');
