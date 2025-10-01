@@ -51,89 +51,86 @@
       </div>
     </header>
     <section class="hero">
-      <div class="hero-container">
-        <div class="hero-text">
-          <h1>Find Your Next Home Directly From Owners</h1>
-          <p>
-            No agent fees, just direct connections with property owners
-            leaving their apartments in Nigeria.
-          </p>
-        </div>
-        <div class="hero-form">
-          <form id="search-form">
-            <div class="input-with-icon">
-              <span class="icon">
-                <img src="./Assets/location.svg" alt="" />
-              </span>
-              <input type="text" placeholder="Enter state or city" id="cityname" />
-              <small>state or city is required</small>
-            </div>
-            <div class="type-cont">
-              <div class="type-box">
-                <input type="text" id="typeInput" readonly placeholder="Any Type" />
-              </div>
-              <ul class="type-menu">
-                <li><button type="button">Bungalow</button></li>
-                <li><button type="button">A Room and Parlour</button></li>
-                <li><button type="button">Self-con</button></li>
-                <li><button type="button">Duplex</button></li>
-                <li><button type="button">Flat</button></li>
-              </ul>
-            </div>
-            <div class="prices">
-              <label for="price">Price:</label>
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Find Your Next Home Directly From Owners</h1>
+      <p>
+        No agent fees, just direct connections with property owners
+        leaving their apartments in Nigeria.
+      </p>
+    </div>
 
-              <div class="dropdown">
-                <div class="dropdown-box">
-                  <input type="text" id="service" readonly placeholder="₦0 - ₦1,000,000" />
-                  <img src="./Assets/dropdown.svg" alt="arrow" class="dropdown-arrow" />
-                </div>
-
-                <ul class="dropdown-menu">
-                  <li>
-                    <button type="button">₦1,500,000 - ₦5,000,000</button>
-                  </li>
-                  <li>
-                    <button type="button">₦5,500,000 - ₦10,000,000</button>
-                  </li>
-                  <li>
-                    <button type="button">₦10,500,000 - ₦30,000,000</button>
-                  </li>
-                  <li>
-                    <button type="button">₦30,500,000 - ₦50,000,000</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="input-btn">
-              <button type="submit">
-                <img src="./Assets/searchh.svg" alt="" />Search
-              </button>
-            </div>
-          </form>
+    <div class="hero-form">
+      <form id="search-form">
+        <!-- Input with validation -->
+        <div class="input-with-icon">
+          <span class="icon">
+            <img src="./Assets/location.svg" alt="" />
+          </span>
+          <input type="text" placeholder="Enter state or city" id="cityname" />
+          <small>state or city is required</small>
         </div>
 
-        <div class="stats">
-          <div class="stat-card">
-            <h2>2,500+</h2>
-            <p>Homes Listed</p>
+        <!-- TYPE DROPDOWN -->
+        <div class="type-cont">
+          <div class="type-box">
+            <input type="text" id="typeInput" readonly placeholder="Any Type" />
           </div>
-          <div class="stat-card">
-            <h2>10,000+</h2>
-            <p>Users Active</p>
-          </div>
-          <div class="stat-card">
-            <h2>20+</h2>
-            <p>Cities Covered</p>
-          </div>
-          <div class="stat-card">
-            <h2>₦500M+</h2>
-            <p>Transactions</p>
+          <ul class="type-menu">
+            <li><button type="button">Bungalow</button></li>
+            <li><button type="button">A Room and Parlour</button></li>
+            <li><button type="button">Self-con</button></li>
+            <li><button type="button">Duplex</button></li>
+            <li><button type="button">Flat</button></li>
+          </ul>
+        </div>
+
+        <!-- PRICE DROPDOWN -->
+        <div class="prices">
+          <label for="price">Price:</label>
+          <div class="dropdown">
+            <div class="dropdown-box">
+              <input type="text" id="service" readonly placeholder="₦0 - ₦1,000,000" />
+              <img src="./Assets/dropdown.svg" alt="arrow" class="dropdown-arrow" />
+            </div>
+            <ul class="dropdown-menu">
+              <li><button type="button">₦1,500,000 - ₦5,000,000</button></li>
+              <li><button type="button">₦5,500,000 - ₦10,000,000</button></li>
+              <li><button type="button">₦10,500,000 - ₦30,000,000</button></li>
+              <li><button type="button">₦30,500,000 - ₦50,000,000</button></li>
+            </ul>
           </div>
         </div>
+
+        <div class="input-btn">
+          <button type="submit">
+            <img src="./Assets/searchh.svg" alt="" />Search
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h2>2,500+</h2>
+        <p>Homes Listed</p>
       </div>
-    </section>
+      <div class="stat-card">
+        <h2>10,000+</h2>
+        <p>Users Active</p>
+      </div>
+      <div class="stat-card">
+        <h2>20+</h2>
+        <p>Cities Covered</p>
+      </div>
+      <div class="stat-card">
+        <h2>₦500M+</h2>
+        <p>Transactions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section class="section3">
       <div class="section3-container">
