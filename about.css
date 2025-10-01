@@ -1123,7 +1123,8 @@ header {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 24px 24px;
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   height: 138px;
   border-radius: 16px;
@@ -1144,7 +1145,87 @@ header {
   letter-spacing: 0%;
   color: #16181d;
 }
-
+@media screen and (max-width: 300px) {
+  .section7-text p {
+    width: 90%;
+  }
+  .cities-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    padding: 16px;
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .cities-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .cities-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    padding: 18px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .cities-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .cities-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cities-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .section7-text p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 728px) {
+  .cities-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cities-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .cities-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .cities-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+  }
+}
+@media (max-width: 1440px) {
+  .cities-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+}
 .section8 {
   margin-top: 96px;
   width: 100%;
