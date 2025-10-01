@@ -137,7 +137,7 @@ nav a.active:hover {
   background-color: rgba(0, 128, 255, 0.8);
 }
 .hamburger {
-  display: none; 
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 24px;
@@ -151,7 +151,7 @@ nav a.active:hover {
   display: block;
   width: 100%;
   height: 3px;
-  background: #16181D;
+  background: #16181d;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
 }
@@ -166,10 +166,11 @@ nav a.active:hover {
 }
 .overlay {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: none;
   z-index: 100;
 }
@@ -210,7 +211,7 @@ nav a.active:hover {
   background-color: rgba(247, 250, 253, 1);
 }
 
- /* form section */
+/* form section */
 
 .container2 {
   display: flex;
@@ -244,18 +245,18 @@ form {
   border-radius: 12px;
   border: none;
   box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.06);
-backdrop-filter: blur(12px);
-background: white;
+  backdrop-filter: blur(12px);
+  background: white;
 }
 form.error input {
-border-bottom-color: #e74c3c;
+  border-bottom-color: #e74c3c;
 }
 form.success input {
-border-bottom-color: #2ecc71;
+  border-bottom-color: #2ecc71;
 }
 form.error small {
   visibility: visible;
-   color: rgb(231, 70, 75);
+  color: rgb(231, 70, 75);
 }
 small {
   visibility: hidden;
@@ -288,11 +289,9 @@ small {
   font-size: 16px;
 }
 
-
-
 .input-with-icon input::placeholder {
   font-size: 14px;
-   font-family: "Inter Variable", sans-serif;
+  font-family: "Inter Variable", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -325,8 +324,6 @@ select option {
   font-style: normal;
 }
 
-
-
 .prices h5 {
   padding-left: 16px;
   font-family: "Inter Variable", sans-serif;
@@ -341,7 +338,7 @@ select option {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding-left: 16px; 
+  padding-left: 16px;
 }
 
 .prices label {
@@ -372,12 +369,12 @@ select option {
   border: none;
   outline: none;
   background: transparent;
-  flex: 1 1 auto;       /* allow grow and shrink */
-  min-width: 0; 
+  flex: 1 1 auto; /* allow grow and shrink */
+  min-width: 0;
   cursor: pointer;
   font-size: 16px;
-   white-space: nowrap;  /* keep text on one line */
-  overflow: hidden;     /* needed for ellipsis */
+  white-space: nowrap; /* keep text on one line */
+  overflow: hidden; /* needed for ellipsis */
   text-overflow: ellipsis;
 }
 
@@ -410,7 +407,7 @@ select option {
   padding: 0;
   display: none;
   z-index: 10;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Dropdown items */
@@ -455,7 +452,7 @@ select option {
 
 .type-box input {
   flex: 1 1 auto;
-  min-width: 0;              
+  min-width: 0;
   border: none;
   outline: none;
   background: transparent;
@@ -479,7 +476,7 @@ select option {
   padding: 0;
   margin: 0;
   display: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
@@ -502,7 +499,6 @@ select option {
 .type-cont.open .type-menu {
   display: block;
 }
-
 
 form button {
   width: 143px;
@@ -563,8 +559,9 @@ form button {
   border: 1px solid rgba(226, 232, 240, 1);
   border-radius: 14px;
 }
- .filter p, .sort p {
- font-family: "Inter Variable", sans-serif;
+.filter p,
+.sort p {
+  font-family: "Inter Variable", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -641,7 +638,7 @@ form button {
 }
 
 .properties-card:hover {
-   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
 }
 
@@ -751,7 +748,9 @@ form button {
   cursor: pointer;
 }
 
-.firsticon:hover svg path, .secondicon:hover svg path, .thirdicon:hover svg path{
+.firsticon:hover svg path,
+.secondicon:hover svg path,
+.thirdicon:hover svg path {
   stroke: rgba(0, 128, 255, 1);
 }
 
@@ -847,54 +846,54 @@ footer {
 }
 
 @media (max-width: 1024px) {
- .property-grid {
-    grid-template-columns: repeat(3,1fr);
+  .property-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 1000px) {
-    .nav-links {
+  .nav-links {
     display: none;
   }
   .header-actions {
     display: none;
   }
   .property-grid {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-    form {
+  form {
     flex-direction: column;
     width: 80%;
     margin-inline: auto;
     margin-top: 20px;
   }
-    .container2 {
+  .container2 {
     width: 89%;
-   }
-   .dropdown-box {
+  }
+  .dropdown-box {
     width: 100%;
     justify-content: space-between;
-   }
-   .input-btn {
+  }
+  .input-btn {
     border-bottom-left-radius: 12px;
-   }
-   .input-with-icon input{
+  }
+  .input-with-icon input {
     border-bottom: 1px rgba(226, 232, 240, 1) solid;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0px;
-   }
-    .type-cont{
-  border-bottom: 1px rgba(226, 232, 240, 1) solid;
-   }
+  }
+  .type-cont {
+    border-bottom: 1px rgba(226, 232, 240, 1) solid;
+  }
   .container2 p {
- width: 98%;
+    width: 98%;
   }
   .prices {
     border: none;
   }
-.input-btn {
-  padding: 12px;
-}
+  .input-btn {
+    padding: 12px;
+  }
   form button {
     width: 80%;
     border-radius: 16px;
@@ -912,55 +911,53 @@ footer {
   }
 }
 
-
 @media (max-width: 600px) {
   form {
     flex-direction: column;
     width: 100%;
   }
 
-   .container2 {
+  .container2 {
     width: 89%;
-   }
+  }
 
   .container2 p {
- width: 98%;
+    width: 98%;
   }
   .prices {
     border: none;
   }
-.input-btn {
-  padding: 12px;
-}
+  .input-btn {
+    padding: 12px;
+  }
   form button {
     width: 98%;
     border-radius: 16px;
   }
-    .nav-links {
+  .nav-links {
     display: none;
   }
   .header-actions {
     display: none;
   }
-.property-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
+  .property-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (max-width: 450px) {
   .dropdown-arrow {
     display: none;
   }
-.container2 {
-  width: 95%;
-  /* margin-inline: auto; */
-}
-form {
-  width: 100%;
-}
+  .container2 {
+    width: 95%;
+    /* margin-inline: auto; */
+  }
+  form {
+    width: 100%;
+  }
   /* optional: reduce padding so text has more room */
   .dropdown-box {
     padding-right: 10px;
