@@ -111,7 +111,7 @@ header {
   background-color: #00f;
 }
 .hamburger {
-  display: none; /* visible only on mobile */
+  display: none; 
   flex-direction: column;
   justify-content: space-between;
   width: 24px;
@@ -129,7 +129,6 @@ header {
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
 }
-/* Morph into X */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -139,8 +138,6 @@ header {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
-/* ---------- Overlay ---------- */
 .overlay {
   position: fixed;
   top: 0; left: 0;
@@ -153,9 +150,7 @@ header {
 .overlay.active {
   display: block;
 }
-
-/* ---------- Mobile Nav ---------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .mainNav {
     position: fixed;
     top: 0;
@@ -214,6 +209,85 @@ header {
   color: #64748b;
   text-align: center;
   margin-inline: auto;
+}
+@media screen and (max-width: 1240px) {
+  .section2-text h4 {
+    font-size: 40px;
+  }
+  .section2-para {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .section2-text h4 {
+    font-size: 36px;
+  }
+  .section2-para {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section2-text h4 {
+    font-size: 32px;
+  }
+  .section2-para {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section2 {
+    padding-top: 72px;
+    margin-bottom: 72px;
+  }
+  .section2-text h4 {
+    font-size: 28px;
+  }
+  .section2-para {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section2 {
+    padding-top: 60px;
+  }
+  .section2-text h4 {
+    font-size: 26px;
+  }
+  .section2-para {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .section2-text h4 {
+    font-size: 22px;
+  }
+  .section2-para {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section2 {
+    padding-top: 48px;
+    margin-bottom: 60px;
+  }
+  .section2-text h4 {
+    font-size: 20px;
+  }
+  .section2-para {
+    font-size: 12.5px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .section2-text h4 {
+    font-size: 18px;
+  }
+  .section2-para {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 .section3 {
   width: 85%;

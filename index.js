@@ -70,3 +70,5 @@ function toggleFavorite(el) {
     }, { once: true });
   }
 }
+
+
