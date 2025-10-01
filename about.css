@@ -110,6 +110,78 @@ header {
 .upload:hover {
   background-color: #00f;
 }
+.hamburger {
+  display: none; /* visible only on mobile */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #16181D;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+/* Morph into X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ---------- Overlay ---------- */
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 100;
+}
+.overlay.active {
+  display: block;
+}
+
+/* ---------- Mobile Nav ---------- */
+@media screen and (max-width: 768px) {
+  .mainNav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 280px;
+    background: #fff;
+    padding-top: 100px;
+    transition: right 0.3s ease-in-out;
+    z-index: 200;
+  }
+  .mainNav.active {
+    right: 0;
+  }
+  .navList {
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 24px;
+  }
+  .headerActions {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
 .section2 {
   width: 100%;
   height: 380px;
