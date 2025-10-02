@@ -135,3 +135,39 @@ document.addEventListener('click', (e) => {
     typeCont.classList.remove('open');
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const statsCards = document.querySelectorAll(".stat-card h2");
+
+  const statsObserverAlways = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const numberEl = entry.target;
+          const target = parseInt(numberEl.dataset.target);
+          const prefix = numberEl.dataset.prefix || "";
+          const suffix = numberEl.dataset.suffix || "";
+          let current = 0;
+          const increment = target / 200; // adjust speed
+
+          const updateNumber = () => {
+            current += increment;
+            if (current < target) {
+              numberEl.textContent = prefix + Math.floor(current).toLocaleString() + suffix;
+              requestAnimationFrame(updateNumber);
+            } else {
+              numberEl.textContent = prefix + target.toLocaleString() + suffix;
+            }
+          };
+
+          // Reset number before starting animation
+          numberEl.textContent = prefix + "0" + suffix;
+          updateNumber();
+        }
+      });
+    },
+    { threshold: 0.5 } // triggers when 50% of the element is visible
+  );
+
+  statsCards.forEach(card => statsObserverAlways.observe(card));
+});
