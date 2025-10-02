@@ -231,24 +231,52 @@ header {
   width: 474px;
   margin-bottom: 32px;
 }
+
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 128px;
+  margin-bottom: 64px;
+  padding-inline: 32px;
+  width: 89%;
+}
+
+.container2 h2 {
+  font-family: "Inter Variable", sans-serif;
+  font-size: 33.3px;
+  font-weight: 400;
+  font-style: normal;
+}
+.container2 p {
+  font-family: "Inter Variable", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  width: 646px;
+  line-height: 28px;
+  color: rgba(100, 116, 139, 1);
+}
+
 form {
   display: flex;
   width: 100%;
   border-radius: 12px;
   border: none;
   box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.06);
-backdrop-filter: blur(12px);
-background: white;
+  backdrop-filter: blur(12px);
+   background-color: #ffffffb2;
 }
 form.error input {
-border-bottom-color: #e74c3c;
+  border-bottom-color: #e74c3c;
 }
 form.success input {
-border-bottom-color: #2ecc71;
+  border-bottom-color: #2ecc71;
 }
 form.error small {
   visibility: visible;
-   color: rgb(231, 70, 75);
+  color: rgb(231, 70, 75);
 }
 small {
   visibility: hidden;
@@ -264,6 +292,8 @@ small {
   position: relative;
   width: 100%;
   height: 72px;
+  border-right: 1px solid rgba(226, 232, 240, 1);
+  background: transparent;
 }
 
 .input-with-icon input {
@@ -279,13 +309,12 @@ small {
   border-left: none;
   outline: none;
   font-size: 16px;
+  background: transparent;
 }
-
-
 
 .input-with-icon input::placeholder {
   font-size: 14px;
-   font-family: "Inter Variable", sans-serif;
+  font-family: "Inter Variable", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -296,20 +325,16 @@ small {
   left: 16px;
 }
 
-select option {
-  text-decoration: none;
-  font-size: 14px;
-  outline: none;
-}
-
 .type-cont {
   width: 100%;
   height: 72px;
   align-content: center;
   border-right: 1px rgba(226, 232, 240, 1) solid;
-  background-color: #ffffff;
+  background: transparent;
 }
-
+.type-cont input {
+  background: transparent;
+}
 .type-cont h6 {
   padding-left: 20px;
   font-family: "Inter Variable", sans-serif;
@@ -317,8 +342,6 @@ select option {
   font-weight: 400;
   font-style: normal;
 }
-
-
 
 .prices h5 {
   padding-left: 16px;
@@ -334,7 +357,7 @@ select option {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding-left: 16px; 
+  padding-left: 16px;
 }
 
 .prices label {
@@ -365,13 +388,21 @@ select option {
   border: none;
   outline: none;
   background: transparent;
-  flex: 1 1 auto;       /* allow grow and shrink */
+  flex: 1 1 auto;    
   min-width: 0; 
   cursor: pointer;
   font-size: 16px;
-   white-space: nowrap;  /* keep text on one line */
-  overflow: hidden;     /* needed for ellipsis */
+   white-space: nowrap;  
+  overflow: hidden;     
   text-overflow: ellipsis;
+}
+
+.dropdown-box input::placeholder {
+   font-size: 16px;
+   font-family: "Inter Variable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(22, 24, 29, 1);
 }
 
 .dropdown-box {
@@ -392,18 +423,18 @@ select option {
 /* Dropdown list */
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 15px);
   left: 0;
   width: 100%;
-  background: white;
+  background-color: #ffffffb2;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin-top: 5px;
   list-style: none;
   padding: 0;
   display: none;
-  z-index: 10;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Dropdown items */
@@ -442,21 +473,29 @@ select option {
   border: none;
   border-radius: 8px;
   padding: 10px 12px;
-  background: #fff;
+  background: transparent;
   cursor: pointer;
 }
 
 .type-box input {
   flex: 1 1 auto;
-  min-width: 0;              
+  min-width: 0;
   border: none;
   outline: none;
   background: transparent;
-  font-size: 14px;
+  font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
+}
+
+.type-box input::placeholder {
+  font-size: 16px;
+   font-family: "Inter Variable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(22, 24, 29, 1);
 }
 
 /* Dropdown menu */
@@ -465,15 +504,15 @@ select option {
   top: calc(100% + 6px);
   left: 0;
   width: 100%;
-  background: white;
+   background-color: #ffffffb2;
   border: 1px solid #ddd;
   border-radius: 8px;
   list-style: none;
   padding: 0;
   margin: 0;
   display: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 .type-menu li button {
@@ -496,7 +535,6 @@ select option {
   display: block;
 }
 
-
 form button {
   width: 143px;
   height: 36px;
@@ -518,12 +556,13 @@ form button {
 .input-btn {
   border-bottom-right-radius: 12px;
   border-top-right-radius: 12px;
-  background-color: #ffffff;
+ background: transparent;
 }
 
 .input-btn button:hover {
   background-color: rgba(0, 128, 255, 0.8);
 }
+
 .stats {
   display: flex;
   justify-content: center;
@@ -534,6 +573,8 @@ form button {
   width: 827.3px;
   height: 122px;
   margin-top: 64px;
+  position: relative;
+  z-index: 1;
 }
 .stat-card {
   background-color: #ffffffb2;
@@ -550,6 +591,8 @@ form button {
   text-align: center;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 .stat-card:hover {
   transform: translateY(-10px);
