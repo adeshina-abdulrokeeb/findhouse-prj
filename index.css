@@ -2062,6 +2062,7 @@ form button {
   font-weight: 400;
   color: rgba(100, 116, 139, 1);
   width: 274px;
+  line-height: 20px;
 }
 .descriptionicons {
   display: flex;
