@@ -1225,14 +1225,14 @@ form button {
   }
 }
 
-@media  (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .section4-card p {
     width: 280px;
     font-size: 15px;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .section4-text h2 {
     font-size: 28px;
   }
@@ -1246,7 +1246,7 @@ form button {
   }
 }
 
-@media (max-width: 680px) {
+@media screen and (max-width: 680px) {
   .section4-card {
     width: 260px;
     padding: 24px;
@@ -1260,7 +1260,7 @@ form button {
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .section4-cards {
     gap: 20px;
   }
@@ -1269,7 +1269,7 @@ form button {
   }
 }
 
-@media (max-width: 520px) {
+@media screen and (max-width: 520px) {
   .section4-text h2 {
     font-size: 24px;
   }
@@ -1281,7 +1281,7 @@ form button {
   }
 }
 
-@media (max-width: 475px) {
+@media screen and (max-width: 475px) {
   .section4-card {
     width: 180px;
     padding: 16px;
@@ -1294,7 +1294,7 @@ form button {
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .section4-card {
     width: 160px;
     padding: 14px;
@@ -1304,7 +1304,7 @@ form button {
   }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .section4-card {
     width: 140px;
     padding: 12px;
@@ -1316,7 +1316,7 @@ form button {
     font-size: 11px;
   }
 }
-@media (max-width: 300px) {
+@media screen and (max-width: 300px) {
   .section4-card {
     width: 120px;
     padding: 10px;
@@ -1365,6 +1365,117 @@ form button {
   line-height: 28px;
   letter-spacing: 0%;
   color: #64748b;
+}
+@media (max-width: 1240px) {
+  .property-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .property-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .section5-text h2 {
+    font-size: 30px;
+  }
+  .section5-text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .properties-card {
+    width: 100%;
+  }
+  .section5-text h2 {
+    font-size: 28px;
+  }
+  .section5-text p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 680px) {
+  .property-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .properties-card {
+    width: 95%;
+    margin: auto;
+  }
+}
+@media (max-width: 600px) {
+  .section5-text h2 {
+    font-size: 26px;
+  }
+  .section5-text p {
+    font-size: 14px;
+  }
+  .properties-card {
+    width: 95%;
+  }
+}
+@media (max-width: 520px) {
+  .property-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .properties-card {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 475px) {
+  .section5-text h2 {
+    font-size: 24px;
+  }
+  .section5-text p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 425px) {
+  .section5-text h2 {
+    font-size: 22px;
+  }
+  .section5-text p {
+    font-size: 12px;
+  }
+  .properties-card {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .section5-text h2 {
+    font-size: 20px;
+  }
+  .section5-text p {
+    font-size: 11px;
+  }
+  .properties-card {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .section5-text h2 {
+    font-size: 18px;
+  }
+  .section5-text p {
+    font-size: 10px;
+  }
+  .properties-card {
+    width: 100%;
+  }
 }
 .view-all-btn {
   display: flex;
@@ -1475,6 +1586,102 @@ form button {
   color: #16181d;
   box-shadow: 0 8px 20px rgba(0,  0,  0,  0.15);
 }
+@media (max-width: 1240px) {
+  .section6-container {
+    width: 90%;
+    gap: 48px;
+  }
+  .section6-texts h2,
+  .section6-texts p {
+    width: 100%;
+  }
+  .section6-img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .section6-container {
+    gap: 36px;
+  }
+}
+@media (max-width: 900px) {
+  .section6-container {
+    gap: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .section6-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .section6-texts,
+  .section6-img {
+    width: 100%;
+  }
+  .section6-texts h2,
+  .section6-texts p {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 728px) {
+  .section6-texts h2 {
+    font-size: 28px;
+  }
+  .section6-texts p {
+    font-size: 16px;
+  }
+  .section6-h6 h6 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 475px) {
+  .section6-container {
+    padding-inline: 16px;
+    gap: 24px;
+  }
+  .section6-texts h2 {
+    font-size: 24px;
+  }
+  .section6-texts p {
+    font-size: 15px;
+  }
+  .section6-h6 h6 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 425px) {
+  .section6-texts h2 {
+    font-size: 22px;
+  }
+  .section6-texts p {
+    font-size: 14px;
+  }
+  .section6-h6 h6 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 300px) {
+  .section6-container {
+    padding-inline: 8px;
+    gap: 16px;
+  }
+  .section6-texts h2 {
+    font-size: 20px;
+  }
+  .section6-texts p {
+    font-size: 13px;
+  }
+  .section6-h6 h6 {
+    font-size: 11px;
+  }
+  .section6-texts button {
+    width: 100%;
+  }
+}
+
 .section4 {
   width: 100%;
   height: 702px;
@@ -1653,7 +1860,115 @@ form button {
   line-height: 20px;
   letter-spacing: 0%;
   color: #64748b;
+}/* Extra large screens: 1240px - 1440px */
+@media (max-width: 1440px) {
+  .section7-container {
+    width: 88%;
+  }
 }
+
+/* Large screens: 1240px - 1024px */
+@media (max-width: 1240px) {
+  .section7-container {
+    width: 90%;
+  }
+}
+
+/* Medium screens: 1024px - 900px */
+@media (max-width: 1024px) {
+  .section7-cards {
+    gap: 24px;
+  }
+}
+
+/* Between 900px - 768px */
+@media (max-width: 900px) {
+  .section7-cards {
+    gap: 16px;
+  }
+}
+
+/* Tablets: 768px and below */
+@media (max-width: 768px) {
+  .section7-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .section7-text, .section7-text p {
+    width: 100%;
+    text-align: center;
+  }
+  .section7-card {
+    width: 90%;
+    height: auto;
+    padding: 24px;
+  }
+  .person-description {
+    width: 100%;
+  }
+}
+
+/* Small tablets: 728px and below */
+@media (max-width: 728px) {
+  .section7-text h2 {
+    font-size: 28px;
+  }
+  .section7-text p {
+    font-size: 16px;
+  }
+  .person-description h5 {
+    font-size: 15px;
+  }
+  .person-description h6 {
+    font-size: 13px;
+  }
+}
+
+/* Mobile: 475px and below */
+@media (max-width: 475px) {
+  .section7-text h2 {
+    font-size: 24px;
+  }
+  .section7-text p {
+    font-size: 15px;
+  }
+  .person-description h5 {
+    font-size: 14px;
+  }
+  .person-description h6 {
+    font-size: 12px;
+  }
+}
+
+/* Small phones: 425px and below */
+@media (max-width: 425px) {
+  .section7-card {
+    width: 95%;
+    padding: 16px;
+  }
+  .section7-text h2 {
+    font-size: 22px;
+  }
+  .section7-text p {
+    font-size: 14px;
+  }
+}
+
+/* Very small phones: 300px and below */
+@media (max-width: 300px) {
+  .section7-card {
+    width: 100%;
+    padding: 12px;
+  }
+  .section7-text h2 {
+    font-size: 20px;
+  }
+  .section7-text p {
+    font-size: 13px;
+  }
+}
+
 .section8 {
   width: 100%;
   background-color: #0080ff;
