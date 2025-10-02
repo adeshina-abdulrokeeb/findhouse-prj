@@ -370,21 +370,12 @@ select option {
   border: none;
   outline: none;
   background: transparent;
-<<<<<<< HEAD
   flex: 1 1 auto;    
   min-width: 0; 
   cursor: pointer;
   font-size: 16px;
    white-space: nowrap;  
   overflow: hidden;     
-=======
-  flex: 1 1 auto; /* allow grow and shrink */
-  min-width: 0;
-  cursor: pointer;
-  font-size: 16px;
-  white-space: nowrap; /* keep text on one line */
-  overflow: hidden; /* needed for ellipsis */
->>>>>>> b2d7aab36c7610e66badd08ce44964209f6aaa8b
   text-overflow: ellipsis;
 }
 
@@ -906,19 +897,12 @@ footer {
     border-bottom: 1px rgba(226, 232, 240, 1) solid;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0px;
-<<<<<<< HEAD
     border-right: none;
    }
     .type-cont{
   border-bottom: 1px rgba(226, 232, 240, 1) solid;
    border-right: none;
    }
-=======
-  }
-  .type-cont {
-    border-bottom: 1px rgba(226, 232, 240, 1) solid;
-  }
->>>>>>> b2d7aab36c7610e66badd08ce44964209f6aaa8b
   .container2 p {
     width: 98%;
   }
@@ -1010,7 +994,6 @@ footer {
   .type-cont {
     border-right: none;
   }
-<<<<<<< HEAD
 .container2 {
   width: 100%;
 }
@@ -1028,16 +1011,6 @@ footer {
 form {
   width: 100%;
 }
-=======
-  .container2 {
-    width: 95%;
-    /* margin-inline: auto; */
-  }
-  form {
-    width: 100%;
-  }
-  /* optional: reduce padding so text has more room */
->>>>>>> b2d7aab36c7610e66badd08ce44964209f6aaa8b
   .dropdown-box {
     padding-right: 10px;
     padding-left: 10px;
