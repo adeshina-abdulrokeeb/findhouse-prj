@@ -10,6 +10,30 @@ const formatNumber = (num, isMoney = false) => {
   return num.toLocaleString();
 };
 
+// ===== Mobile Navigation (Hamburger Menu) =====
+const hamburger = document.getElementById("hamburger");
+const mainNav = document.getElementById("mainNav");
+
+// Toggle navigation when hamburger is clicked
+hamburger.addEventListener("click", () => {
+  const isActive = hamburger.classList.toggle("active"); // Animate hamburger
+  mainNav.classList.toggle("active"); // Slide nav menu in/out
+
+  if (isActive) {
+    document.body.classList.add("no-scroll"); // Prevent background scrolling
+  } else {
+    document.body.classList.remove("no-scroll");
+  }
+});
+
+// Close nav when clicking outside menu content (on nav background)
+mainNav.addEventListener("click", (e) => {
+  if (e.target === mainNav) {
+    hamburger.classList.remove("active");
+    mainNav.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  }
+});
 //Form Validation
 
 function formatFieldName(input) {
