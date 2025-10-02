@@ -115,36 +115,78 @@
               <img src="./Assets/filter.svg" alt="" />
               <p>filters</p>
             </div>
-            <div class="sort">
-              <p>Sort: Newest</p>
-              <img src="./Assets/downblackarrow.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="property-grid">
-          <div class="properties-card">
-            <div class="property-img">
-              <div class="img-cont">
-                <img src="./Assets/1 Bedroom.png" alt="" />
+            <div class="type-cont">
+              <div class="type-box">
+                <input
+                  type="text"
+                  id="typeInput"
+                  readonly
+                  placeholder="Any Type"
+                />
               </div>
-              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="heart">
-                  <path
-                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                    stroke-width="1.66667" />
-                </svg>
-              </div>
+              <ul class="type-menu">
+                <li><button type="button">Bungalow</button></li>
+                <li><button type="button">A Room and Parlour</button></li>
+                <li><button type="button">Self-con</button></li>
+                <li><button type="button">Duplex</button></li>
+                <li><button type="button">Flat</button></li>
+              </ul>
             </div>
-            <div class="describe">
-              <h4>1 Bedroom</h4>
-              <p>Abeokuta, Ogun</p>
-              <div class="about">
-                <h5>₦500,001<span>/ year</span></h5>
-                <div class="para">
-                  <p>0 bed</p>
-                  <p>0 bath</p>
+            <div class="prices">
+              <label for="price">Price:</label>
+
+              <div class="dropdown">
+                <div class="dropdown-box">
+                  <input
+                    type="text"
+                    id="service"
+                    readonly
+                    placeholder="₦0 - ₦1,000,000"
+                  />
+                  <img
+                    src="./Assets/dropdown.svg"
+                    alt="arrow"
+                    class="dropdown-arrow"
+                  />
                 </div>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <button type="button">₦1,5M - ₦5M</button>
+                  </li>
+                  <li>
+                    <button type="button">₦5.5M - ₦10M</button>
+                  </li>
+                  <li>
+                    <button type="button">₦10.5M - ₦30M</button>
+                  </li>
+                  <li>
+                    <button type="button">₦30.5M - ₦50M</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="input-btn">
+              <button type="submit">
+                <img src="./Assets/searchh.svg" alt="" />Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="properties">
+        <div class="container3">
+          <div class="topcont">
+            <p class="availability">6 Properties Available</p>
+            <div class="order">
+              <div class="filter">
+                <img src="./Assets/filter.svg" alt="" />
+                <p>filters</p>
+              </div>
+              <div class="sort">
+                <p>Sort: Newest</p>
+                <img src="./Assets/downblackarrow.svg" alt="" />
               </div>
             </div>
           </div>

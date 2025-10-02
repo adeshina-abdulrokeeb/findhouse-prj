@@ -272,6 +272,7 @@ small {
   position: relative;
   width: 100%;
   height: 72px;
+  border-right: 1px solid rgba(226, 232, 240, 1);
 }
 
 .input-with-icon input {
@@ -369,13 +370,21 @@ select option {
   border: none;
   outline: none;
   background: transparent;
-  flex: 1 1 auto; /* allow grow and shrink */
-  min-width: 0;
+  flex: 1 1 auto;    
+  min-width: 0; 
   cursor: pointer;
   font-size: 16px;
-  white-space: nowrap; /* keep text on one line */
-  overflow: hidden; /* needed for ellipsis */
+   white-space: nowrap;  
+  overflow: hidden;     
   text-overflow: ellipsis;
+}
+
+.dropdown-box input::placeholder {
+   font-size: 16px;
+   font-family: "Inter Variable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(22, 24, 29, 1);
 }
 
 .dropdown-box {
@@ -456,11 +465,19 @@ select option {
   border: none;
   outline: none;
   background: transparent;
-  font-size: 14px;
+  font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
+}
+
+.type-box input::placeholder {
+  font-size: 16px;
+   font-family: "Inter Variable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(22, 24, 29, 1);
 }
 
 /* Dropdown menu */
@@ -864,7 +881,6 @@ footer {
   form {
     flex-direction: column;
     width: 80%;
-    margin-inline: auto;
     margin-top: 20px;
   }
   .container2 {
@@ -881,23 +897,39 @@ footer {
     border-bottom: 1px rgba(226, 232, 240, 1) solid;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0px;
-  }
-  .type-cont {
-    border-bottom: 1px rgba(226, 232, 240, 1) solid;
-  }
+    border-right: none;
+   }
+    .type-cont{
+  border-bottom: 1px rgba(226, 232, 240, 1) solid;
+   border-right: none;
+   }
   .container2 p {
     width: 98%;
   }
   .prices {
     border: none;
+    height: 72px;
   }
   .input-btn {
     padding: 12px;
   }
   form button {
-    width: 80%;
+    width: 70%;
     border-radius: 16px;
     margin-inline: auto;
+  }
+  .properties {
+    width: 100%;
+  }
+  .properties-card {
+    width: 100%;
+  }
+  .availability {
+    width: 30%;
+  }
+  .container3 {
+    padding-inline: 0px;
+    width: 90%;
   }
   .footer-links {
     flex-direction: column;
@@ -919,7 +951,8 @@ footer {
 
   .container2 {
     width: 89%;
-  }
+    padding-inline: 16px;
+   }
 
   .container2 p {
     width: 98%;
@@ -948,24 +981,42 @@ footer {
   }
 }
 @media (max-width: 450px) {
-  .dropdown-arrow {
-    display: none;
-  }
-  .container2 {
-    width: 95%;
-    /* margin-inline: auto; */
-  }
-  form {
+  .hero-section {
     width: 100%;
+    margin-inline: auto;
   }
-  /* optional: reduce padding so text has more room */
+  .input-with-icon input {
+    border-right: none;
+  }
+  .input-with-icon {
+    border: none;
+  }
+  .type-cont {
+    border-right: none;
+  }
+.container2 {
+  width: 100%;
+}
+.container2 h2 {
+  width: 100%;
+  font-size: 33.05px;
+}
+.container2 p {
+  width: 100%;
+  font-size: 18px;
+}
+.prices {
+  height: 72px;
+}
+form {
+  width: 100%;
+}
   .dropdown-box {
     padding-right: 10px;
     padding-left: 10px;
+    width: 90%;
   }
-
-  /* keep input truncation (already set) but you can reduce font-size if needed */
-  .dropdown-box input {
-    font-size: 13px;
+  .organization {
+    text-align: center;
   }
 }
