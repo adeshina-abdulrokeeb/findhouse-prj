@@ -1860,35 +1860,27 @@ form button {
   line-height: 20px;
   letter-spacing: 0%;
   color: #64748b;
-}/* Extra large screens: 1240px - 1440px */
+}
 @media (max-width: 1440px) {
   .section7-container {
     width: 88%;
   }
 }
-
-/* Large screens: 1240px - 1024px */
 @media (max-width: 1240px) {
   .section7-container {
     width: 90%;
   }
 }
-
-/* Medium screens: 1024px - 900px */
 @media (max-width: 1024px) {
   .section7-cards {
     gap: 24px;
   }
 }
-
-/* Between 900px - 768px */
 @media (max-width: 900px) {
   .section7-cards {
     gap: 16px;
   }
 }
-
-/* Tablets: 768px and below */
 @media (max-width: 768px) {
   .section7-cards {
     flex-direction: column;
@@ -1908,8 +1900,6 @@ form button {
     width: 100%;
   }
 }
-
-/* Small tablets: 728px and below */
 @media (max-width: 728px) {
   .section7-text h2 {
     font-size: 28px;
@@ -1924,8 +1914,6 @@ form button {
     font-size: 13px;
   }
 }
-
-/* Mobile: 475px and below */
 @media (max-width: 475px) {
   .section7-text h2 {
     font-size: 24px;
@@ -1940,8 +1928,6 @@ form button {
     font-size: 12px;
   }
 }
-
-/* Small phones: 425px and below */
 @media (max-width: 425px) {
   .section7-card {
     width: 95%;
@@ -1954,8 +1940,6 @@ form button {
     font-size: 14px;
   }
 }
-
-/* Very small phones: 300px and below */
 @media (max-width: 300px) {
   .section7-card {
     width: 100%;
@@ -1968,7 +1952,6 @@ form button {
     font-size: 13px;
   }
 }
-
 .section8 {
   width: 100%;
   background-color: #0080ff;
