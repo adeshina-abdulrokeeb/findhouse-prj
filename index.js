@@ -1,15 +1,3 @@
-const counters = document.querySelectorAll(".counter");
-
-const formatNumber = (num, isMoney = false) => {
-  if (isMoney) {
-    if (num >= 1_000_000_000) return "₦" + (num / 1_000_000_000).toFixed(1) + "B";
-    if (num >= 1_000_000) return "₦" + (num / 1_000_000).toFixed(0) + "M";
-    if (num >= 1_000) return "₦" + (num / 1_000).toFixed(0) + "K";
-    return "₦" + num;
-  }
-  return num.toLocaleString();
-};
-
 // ===== Mobile Navigation (Hamburger Menu) =====
 const hamburger = document.getElementById("hamburger");
 const mainNav = document.getElementById("mainNav");
@@ -37,7 +25,7 @@ mainNav.addEventListener("click", (e) => {
 //Form Validation
 
 function formatFieldName(input) {
-  return input.id.charAt(0).toUppercase() + input.id.slice(1);
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
 document.getElementById("search-form").addEventListener("submit", function (e) {
