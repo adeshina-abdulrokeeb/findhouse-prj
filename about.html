@@ -2,65 +2,79 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Page</title>
+
+  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="./about.css" />
 </head>
 
 <body>
   <div class="container">
-    <header>
-  <div class="container1">
-    <div class="logo">
-      <a href="./index.html">Find<span class="logoSpan">House</span></a>
-    </div>
-    <!-- Hamburger (mobile only) -->
-    <button class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav class="mainNav" id="mainNav">
-      <ul class="navList">
-        <li><a href="./index.html" class="active">Home</a></li>
-        <li><a href="./Listings.html">Listings</a></li>
-        <li><a href="./workings.html">How it works</a></li>
-        <li><a href="./about.html">About</a></li>
-      </ul>
-    </nav>
-    <div class="headerActions">
-      <button class="searchBtn">
-        <img src="./images/searchIcon.png" alt="search-icon" height="16" width="16" />
-      </button>
-      <button class="login">Login / Register</button>
-      <button class="upload">Upload Property</button>
-    </div>
-  </div>
-</header>
 
+    <!-- ================= HEADER ================= -->
+    <header>
+      <div class="container1">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="./index.html">Find<span class="logoSpan">House</span></a>
+        </div>
+
+        <!-- Hamburger Menu (for mobile view) -->
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav class="mainNav" id="mainNav">
+          <ul class="navList">
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./Listings.html">Listings</a></li>
+            <li><a href="./workings.html">How it works</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Buttons -->
+        <div class="headerActions">
+          <button class="searchBtn">
+            <img src="./images/searchIcon.png" alt="search-icon" height="16" width="16" />
+          </button>
+          <button class="login">Login / Register</button>
+          <button class="upload">Upload Property</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MISSION SECTION ================= -->
     <section class="section2">
       <div class="section2-text">
         <h4>Our <span class="mission-span">Mission</span></h4>
       </div>
       <div class="section2-para">
-        <p>We're on a mission to revolutionize the rental market in Nigeria by
-          connecting people directly, eliminating unnecessary fees, and creating a
-          more efficient housing ecosystem.</p>
+        <p>
+          We're on a mission to revolutionize the rental market in Nigeria by
+          connecting people directly, eliminating unnecessary fees, and creating
+          a more efficient housing ecosystem.
+        </p>
       </div>
     </section>
 
+    <!-- ================= STORY & VISION SECTION ================= -->
     <section class="section3">
-
+      <!-- Our Story -->
       <div class="story-card">
-        <h5>
-          Our Story
-        </h5>
+        <h5>Our Story</h5>
         <p class="para1">FindHouse was born out of frustration with
           the traditional rental market in Nigeria.</p>
         <p class="para">Our founder, a former executive at PropertyPro, witnessed firsthand the
@@ -69,95 +83,112 @@
           making it increasingly difficult for people to find suitable accommodation
           within their budget.</p>
         <p class="para">That's when the idea struck: what if people leaving their apartments could
-          connect directly with those looking for new homes? This would eliminate
-          agent fees, speed up the process, and even create an additional income
-          stream for outgoing tenants.</p>
+          connect directly with those looking for new homes?</p>
         <p class="param">Since our launch in 2022, we've helped thousands of Nigerians find homes
           easily and affordably, while rewarding those who list their properties.</p>
       </div>
 
+      <!-- Our Vision -->
       <div class="vision-card">
         <div class="main-vision-card">
           <h6>Our Vision</h6>
-          <p>"To create a Nigeria where finding a home
-            is simple, transparent, and affordable for
-            everyone."</p>
+          <p>
+            "To create a Nigeria where finding a home
+            is simple, transparent, and affordable for everyone."
+          </p>
           <button class="guide-btn">Learn How it Works</button>
         </div>
       </div>
     </section>
 
+    <!-- ================= STATISTICS SECTION ================= -->
     <section class="section4">
+      <!-- Registered Users -->
       <div class="section4-card">
         <h3 data-target="50000" data-type="number">50,000+</h3>
         <p>Registered Users</p>
       </div>
+
+      <!-- Properties Listed -->
       <div class="section4-card">
         <h3 data-target="10000" data-type="number">10,000+</h3>
         <p>Properties Listed</p>
       </div>
+
+      <!-- Successful Handovers -->
       <div class="section4-card">
         <h3 data-target="5000" data-type="number">5,000+</h3>
         <p>Successful Handovers</p>
       </div>
+
+      <!-- Savings in Fees -->
       <div class="section4-card">
         <h3 data-target="250" data-type="money">₦250M+</h3>
         <p>Saved in Agent Fees</p>
       </div>
     </section>
 
+    <!-- ================= VALUES SECTION ================= -->
     <section class="section5">
       <div class="section5-text">
         <h4>Our Values</h4>
         <p>The principles that guide everything we do at FindHouse.</p>
       </div>
 
+      <!-- Value Cards -->
       <div class="values-cards">
+        <!-- Community -->
         <div class="value-card">
-          <img src="./images/community.png" alt="community" height="40px" width="40px">
+          <img src="./images/community.png" alt="community" height="40" width="40" />
           <h6>Community First</h6>
-          <p>We believe in the power of community and connecting people to help each other find and provide homes.</p>
+          <p>We believe in the power of community...</p>
         </div>
+
+        <!-- Transparency -->
         <div class="value-card">
-          <img src="./images/transparency.png" alt="transparency" height="40px" width="40px">
+          <img src="./images/transparency.png" alt="transparency" height="40" width="40" />
           <h6>Trust & Transparency</h6>
-          <p>Every listing on our platform is verified, and we ensure complete transparency in all transactions.</p>
+          <p>Every listing on our platform is verified...</p>
         </div>
+
+        <!-- Innovation -->
         <div class="value-card">
-          <img src="./images/innovation.png" alt="innovation" height="40px" width="40px">
+          <img src="./images/innovation.png" alt="innovation" height="40" width="40" />
           <h6>Innovation</h6>
-          <p>We're constantly looking for new ways to improve the rental experience and make it more affordable.</p>
+          <p>We're constantly looking for new ways...</p>
         </div>
       </div>
     </section>
 
+    <!-- ================= TEAM SECTION ================= -->
     <section class="section6">
       <div class="section6-text">
         <h4>Meet Our Team</h4>
         <p>The passionate individuals working to revolutionize Nigeria's rental market.</p>
       </div>
 
+      <!-- Team Member Cards -->
       <div class="team-cards">
         <div class="team-card">
-          <img src="./images/JA.png" alt="team-member" height="96px" width="96px">
+          <img src="./images/JA.png" alt="team-member" height="96" width="96" />
           <h5>John Adeyemi</h5>
           <h6>Founder & CEO</h6>
-          <p>Former executive at PropertyPro with 10+ years in real estate.</p>
+          <p>Former executive at PropertyPro...</p>
         </div>
         <div class="team-card">
-          <img src="./images/AO.png" alt="team-member" height="96px" width="96px">
+          <img src="./images/AO.png" alt="team-member" height="96" width="96" />
           <h5>Amina Okonkwo</h5>
           <h6>Head of Operations</h6>
-          <p>Passionate about making housing accessible to all Nigerians.</p>
+          <p>Passionate about making housing accessible...</p>
         </div>
         <div class="team-card">
-          <img src="./images/DO.png" alt="team-member" height="96px" width="96px">
+          <img src="./images/DO.png" alt="team-member" height="96" width="96" />
           <h5>David Okoye</h5>
           <h6>Chief Technology Officer</h6>
-          <p>Tech innovator with experience building scalable platforms.</p>
+          <p>Tech innovator with experience building platforms.</p>
         </div>
         <div class="team-card">
-          <img src="./images/SI.png" alt="team-member" height="96px" width="96px">
+          <img src="./images/SI.png" alt="team-member" height="96" width="96" />
           <h5>Sarah Ibrahim</h5>
           <h6>Customer Success</h6>
           <p>Dedicated to creating exceptional user experiences.</p>
@@ -165,75 +196,61 @@
       </div>
     </section>
 
+    <!-- ================= CITIES SECTION ================= -->
     <section class="section7">
       <div class="section7-text">
         <h4>We're Growing Across Nigeria</h4>
-        <p>FindHouse is available in major cities across Nigeria, with plans to expand nationwide.</p>
+        <p>FindHouse is available in major cities across Nigeria...</p>
       </div>
 
+      <!-- List of Cities -->
       <div class="cities-list">
-        <p><img src="./images/cities.png" alt="cities" height="20px" width="20px">Lagos</p>
-        <p><img src="./images/cities.png" alt="cities" height="20px" width="20px">Abuja</p>
-        <p><img src="./images/cities.png" alt="cities" height="20px" width="20px">Port Harcourt</p>
-        <p><img src="./images/cities.png" alt="cities" height="20px" width="20px">Ibadan</p>
-        <p><img src="./images/cities.png" alt="cities" height="20px" width="20px">Kano</p>
-        <p><img src="./images/cities.png" alt="cities" height="20px" width="20px">Enugu</p>
-        <p><img src="./images/cities.png" alt="cities" height="20px" width="20px">Benin City</p>
-        <p><img src="./images/cities.png" alt="cities" height="20px" width="20px">Kaduna</p>
+        <p><img src="./images/cities.png" alt="cities" height="20" width="20" /> Lagos</p>
+        <p><img src="./images/cities.png" alt="cities" height="20" width="20" /> Abuja</p>
+        <p><img src="./images/cities.png" alt="cities" height="20" width="20" /> Port Harcourt</p>
+        <p><img src="./images/cities.png" alt="cities" height="20" width="20" /> Ibadan</p>
+        <p><img src="./images/cities.png" alt="cities" height="20" width="20" /> Kano</p>
+        <p><img src="./images/cities.png" alt="cities" height="20" width="20" /> Enugu</p>
+        <p><img src="./images/cities.png" alt="cities" height="20" width="20" /> Benin City</p>
+        <p><img src="./images/cities.png" alt="cities" height="20" width="20" /> Kaduna</p>
       </div>
     </section>
 
+    <!-- ================= CALL TO ACTION ================= -->
     <section class="section8">
       <div class="section8-text">
         <h4>Join the Housing Revolution</h4>
-        <p>Be part of the movement to make housing more accessible and affordable for all Nigerians.</p>
+        <p>Be part of the movement to make housing more accessible...</p>
       </div>
 
+      <!-- CTA Buttons -->
       <div class="section8-buttons">
         <button class="btn1">Browse Listings</button>
         <button class="btn2">List Your Property</button>
       </div>
     </section>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
       <div class="container6">
         <div class="footer-links">
+
+          <!-- Footer Logo & Description -->
           <div class="description">
             <div class="logo">
               <a href="#">Find<span class="logospan">House</span></a>
             </div>
-            <p>
-              Connecting people looking for houses directly with property
-              owners, eliminating agent fees in Nigeria.
-            </p>
+            <p>Connecting people looking for houses directly...</p>
+
+            <!-- Social Media Icons -->
             <div class="descriptionicons">
-              <div class="firsticon">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.0002 1.66675H12.5002C11.3951 1.66675 10.3353 2.10573 9.55388 2.88714C8.77248 3.66854 8.3335 4.72835 8.3335 5.83341V8.33341H5.8335V11.6667H8.3335V18.3334H11.6668V11.6667H14.1668L15.0002 8.33341H11.6668V5.83341C11.6668 5.6124 11.7546 5.40044 11.9109 5.24416C12.0672 5.08788 12.2791 5.00008 12.5002 5.00008H15.0002V1.66675Z"
-                    stroke="#64748B" stroke-width="1.66667" />
-                </svg>
-              </div>
-              <div class="secondicon">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M18.3332 3.33343C18.3332 3.33343 17.7498 5.08343 16.6665 6.16677C17.9998 14.5001 8.83317 20.5834 1.6665 15.8334C3.49984 15.9168 5.33317 15.3334 6.6665 14.1668C2.49984 12.9168 0.416504 8.0001 2.49984 4.16677C4.33317 6.33343 7.1665 7.58343 9.99984 7.5001C9.24984 4.0001 13.3332 2.0001 15.8332 4.33343C16.7498 4.33343 18.3332 3.33343 18.3332 3.33343Z"
-                    stroke="#64748B" stroke-width="1.66667" />
-                </svg>
-              </div>
-              <div class="thirdicon">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M14.1665 1.66675H5.83317C3.53198 1.66675 1.6665 3.53223 1.6665 5.83341V14.1667C1.6665 16.4679 3.53198 18.3334 5.83317 18.3334H14.1665C16.4677 18.3334 18.3332 16.4679 18.3332 14.1667V5.83341C18.3332 3.53223 16.4677 1.66675 14.1665 1.66675Z"
-                    stroke="#64748B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M13.3333 9.47501C13.4361 10.1685 13.3176 10.8769 12.9947 11.4992C12.6718 12.1215 12.1609 12.6262 11.5346 12.9414C10.9083 13.2566 10.1986 13.3663 9.50641 13.255C8.81419 13.1436 8.17472 12.8167 7.67895 12.321C7.18318 11.8252 6.85636 11.1857 6.74497 10.4935C6.63359 9.8013 6.74331 9.09159 7.05852 8.46532C7.37374 7.83905 7.87841 7.32812 8.50074 7.00521C9.12307 6.68229 9.83138 6.56383 10.5249 6.66667C11.2324 6.77158 11.8873 7.10123 12.393 7.60693C12.8987 8.11263 13.2283 8.76757 13.3333 9.47501Z"
-                    stroke="#64748B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M14.5835 5.41675H14.5918" stroke="#64748B" stroke-width="1.66667" />
-                </svg>
-              </div>
+              <div class="firsticon"> ... </div>
+              <div class="secondicon"> ... </div>
+              <div class="thirdicon"> ... </div>
             </div>
           </div>
+
+          <!-- Quick Links -->
           <div class="quicklinks">
             <h4>Quick Links</h4>
             <ul>
@@ -244,6 +261,8 @@
               <li><a href="">Contact</a></li>
             </ul>
           </div>
+
+          <!-- Resources -->
           <div class="resources">
             <h4>Resources</h4>
             <ul>
@@ -254,6 +273,8 @@
               <li><a href="">Blog</a></li>
             </ul>
           </div>
+
+          <!-- Contact Info -->
           <div class="contacts">
             <h4>Contacts</h4>
             <div class="contdiv">
@@ -266,6 +287,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Footer Bottom -->
         <div class="last-cont">
           <div class="last-div">
             <div class="organization">
@@ -284,6 +307,7 @@
     </footer>
   </div>
 
+  <!-- External JavaScript -->
   <script src="./about.js"></script>
 </body>
 

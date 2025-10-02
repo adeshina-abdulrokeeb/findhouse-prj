@@ -48,19 +48,19 @@ function formatFieldName(input) {
   return input.id.charAt(0).toUppercase() + input.id.slice(1);
 }
 
- document.getElementById("search-form").addEventListener("submit", function (e) {
-    const input = document.getElementById("cityname");
-    const errorMsg = input.nextElementSibling;
+document.getElementById("search-form").addEventListener("submit", function (e) {
+  const input = document.getElementById("cityname");
+  const errorMsg = input.nextElementSibling;
 
-    if (input.value.trim() === "") {
-      e.preventDefault(); // Prevent form submission
-      errorMsg.style.visibility = "visible"; // Show the error message
-      input.classList.add("error"); // Optional: add a class for styling
-    } else {
-      errorMsg.style.visibility = "hidden";
-      input.classList.remove("error");
-    }
-  });
+  if (input.value.trim() === "") {
+    e.preventDefault(); // Prevent form submission
+    errorMsg.style.visibility = "visible"; // Show the error message
+    input.classList.add("error"); // Optional: add a class for styling
+  } else {
+    errorMsg.style.visibility = "hidden";
+    input.classList.remove("error");
+  }
+});
 
 const prices = document.querySelector(".prices");
 const input = prices.querySelector("input");
@@ -76,7 +76,7 @@ prices.addEventListener("click", (e) => {
 // Handle option clicks
 options.forEach(option => {
   option.addEventListener("click", (e) => {
-    e.stopPropagation(); 
+    e.stopPropagation();
     input.value = option.textContent;
     prices.classList.remove("active");
   });

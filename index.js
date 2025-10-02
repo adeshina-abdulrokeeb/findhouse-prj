@@ -10,39 +10,6 @@ const formatNumber = (num, isMoney = false) => {
   return num.toLocaleString();
 };
 
-const animateCounters = () => {
-  counters.forEach(counter => {
-    const target = +counter.getAttribute("data-target");
-    const isMoney = counter.dataset.money === "true";
-    let count = 0;
-
-    const update = () => {
-      const increment = Math.ceil((target - count) / 15);
-
-      if (count < target) {
-        count += increment;
-        counter.innerText = formatNumber(count, isMoney);
-        requestAnimationFrame(update);
-      } else {
-        counter.innerText = formatNumber(target, isMoney);
-
-        // create + sign that fades in
-        const plus = document.createElement("span");
-        plus.textContent = "+";
-        plus.style.opacity = 0;
-        plus.style.transition = "opacity 0.6s ease-in";
-        counter.appendChild(plus);
-
-        // trigger fade-in
-        setTimeout(() => {
-          plus.style.opacity = 1;
-        }, 100);
-      }
-    };
-
-    update();
-  });
-};
 
 // Run only when section is visible
 const statsSection = document.querySelector(".stats");
@@ -96,3 +63,75 @@ document.querySelectorAll('.navList a').forEach(link => {
 });
 
 
+//Form Validation
+
+function formatFieldName(input) {
+  return input.id.charAt(0).toUppercase() + input.id.slice(1);
+}
+
+document.getElementById("search-form").addEventListener("submit", function (e) {
+  const input = document.getElementById("cityname");
+  const errorMsg = input.nextElementSibling;
+
+  if (input.value.trim() === "") {
+    e.preventDefault(); // Prevent form submission
+    errorMsg.style.visibility = "visible"; // Show the error message
+    input.classList.add("error"); // Optional: add a class for styling
+  } else {
+    errorMsg.style.visibility = "hidden";
+    input.classList.remove("error");
+  }
+});
+
+const prices = document.querySelector(".prices");
+const input = prices.querySelector("input");
+const options = prices.querySelectorAll(".dropdown-menu button");
+
+// Toggle dropdown when clicking the box
+prices.addEventListener("click", (e) => {
+  if (e.target.closest(".dropdown-box")) {
+    prices.classList.toggle("active");
+  }
+});
+
+// Handle option clicks
+options.forEach(option => {
+  option.addEventListener("click", (e) => {
+    e.stopPropagation();
+    input.value = option.textContent;
+    prices.classList.remove("active");
+  });
+});
+
+// Close if clicking outside
+document.addEventListener("click", (e) => {
+  if (!prices.contains(e.target)) {
+    prices.classList.remove("active");
+  }
+});
+
+// TYPE DROPDOWN
+const typeCont = document.querySelector('.type-cont');
+const typeBox = typeCont.querySelector('.type-box');
+const typeInput = document.getElementById('typeInput');
+const typeOptions = typeCont.querySelectorAll('.type-menu button');
+
+// toggle open/close
+typeBox.addEventListener('click', () => {
+  typeCont.classList.toggle('open');
+});
+
+// pick option
+typeOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    typeInput.value = option.textContent;
+    typeCont.classList.remove('open');
+  });
+});
+
+// close if clicking outside
+document.addEventListener('click', (e) => {
+  if (!typeCont.contains(e.target)) {
+    typeCont.classList.remove('open');
+  }
+});
