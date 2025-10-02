@@ -1156,8 +1156,10 @@ header {
     width: 90%;
   }
   .cities-list {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: auto; */
+    display: flex;
+    flex-direction: column;
     height: auto;
     padding: 16px;
     gap: 16px;
