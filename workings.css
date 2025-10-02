@@ -13,6 +13,8 @@ button {
   cursor: pointer;
 }
 
+/* Header Styling */
+
 header {
   width: 100%;
   max-width: 1440px;
@@ -132,6 +134,7 @@ nav a.active:hover {
 .upload:hover {
   background-color: rgba(0, 128, 255, 0.8);
 }
+
 .hamburger {
   display: none; 
   flex-direction: column;
@@ -143,6 +146,7 @@ nav a.active:hover {
   cursor: pointer;
   z-index: 1001;
 }
+
 .hamburger span {
   display: block;
   width: 100%;
@@ -172,7 +176,10 @@ nav a.active:hover {
 .overlay.active {
   display: block;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
+  .container1 {
+    gap: 10px;
+  }
   .mainNav {
     position: fixed;
     top: 0;
@@ -185,21 +192,39 @@ nav a.active:hover {
     z-index: 200;
   }
   .mainNav.active {
-    right: 0;
+   transform: translateX(0);
   }
   .navList {
     flex-direction: column;
     gap: 24px;
     padding-left: 24px;
   }
-  .headerActions {
+  .header-actions {
     display: none;
   }
   .hamburger {
     display: flex;
   }
+  /* Overlay effect inside nav */
+  /* .mainNav::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(175, 174, 174, 0.5);
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .mainNav.active::before {
+    opacity: 1;
+    pointer-events: all;
+} */
 }
-/* hero-section */
+/* hero-section styling */
 .container2 {
   display: flex;
   justify-content: center;
@@ -415,6 +440,8 @@ nav a.active:hover {
   cursor: pointer;
 }
 
+/* WhyChooseUs Section Styling */
+
 .whyChooseFindhouse {
   background-color: rgba(247, 250, 253, 1);
   padding-block: 96px;
@@ -491,6 +518,8 @@ nav a.active:hover {
   background-color: rgba(0, 128, 255, 0.8);
 }
 
+/* ReadyContainer Styling */
+
 .readycontainer {
   padding: 33px;
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.04);
@@ -555,6 +584,8 @@ nav a.active:hover {
 .browse:hover {
   background-color: whitesmoke;
 }
+
+/* Frequently Asked Questions Styling */
 
 .FAQ {
   margin: 96px auto;
@@ -623,7 +654,7 @@ nav a.active:hover {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* footer */
+/* footer styling*/
 
 .container6 {
   padding: 32px;
@@ -745,6 +776,7 @@ footer {
   border-top: 1px rgba(226, 232, 240, 1) solid;
 }
 
+/* media Queries */
 
 @media (max-width: 1250px) {
     .container4 {
@@ -774,6 +806,9 @@ align-items: center;
 }
 
 @media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
   .cards {
     flex-direction: column;
     gap: 3rem;
@@ -808,7 +843,6 @@ align-items: center;
 
   }
   .readycontainer {
-    /* width: 70%; */
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -846,6 +880,9 @@ align-items: center;
 
 
 @media (max-width: 600px) {
+  .container1{
+    padding-inline: 16px;
+  }
   .nav-links {
     display: none;
   }
@@ -937,6 +974,9 @@ align-items: center;
     gap: 32px;
     width: 92%;
   }
+  .container6 {
+    padding: 0px;
+  }
   .faq-head h3 {
 font-size: 28.48px;
 width: 217.31px;
@@ -953,6 +993,9 @@ margin-inline: auto;
   .footer-links {
     flex-direction: column;
     gap: 40px;
+  }
+  .organization {
+    text-align: center;
   }
   .last-div {
     flex-direction: column;

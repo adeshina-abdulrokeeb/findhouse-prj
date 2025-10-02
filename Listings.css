@@ -1,3 +1,5 @@
+/* Body Reset Styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,8 @@ main {
 button {
   cursor: pointer;
 }
+
+/* Header Styling */
 
 header {
   width: 100%;
@@ -177,6 +181,7 @@ nav a.active:hover {
 .overlay.active {
   display: block;
 }
+
 @media screen and (max-width: 1024px) {
   .mainNav {
     position: fixed;
@@ -200,10 +205,13 @@ nav a.active:hover {
   .headerActions {
     display: none;
   }
-  .hamburger {
+  /* .hamburger {
     display: flex;
-  }
+  } */
 }
+
+/* Hero-section styling */
+
 .hero-section {
   display: flex;
   justify-content: center;
@@ -705,6 +713,8 @@ form button {
   animation: pulse 0.6s ease forwards;
 }
 
+/* Heart Svg Animation */
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -738,7 +748,7 @@ form button {
   justify-content: space-between;
 }
 
-/* footer */
+/* footer styling */
 
 .container6 {
   padding: 32px;
@@ -861,6 +871,8 @@ footer {
   margin-top: 97px;
   border-top: 1px rgba(226, 232, 240, 1) solid;
 }
+
+/* Media-Queries */
 
 @media (max-width: 1024px) {
   .property-grid {
