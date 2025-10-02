@@ -34,6 +34,7 @@ mainNav.addEventListener("click", (e) => {
     document.body.classList.remove("no-scroll");
   }
 });
+
 //Form Validation
 
 function formatFieldName(input) {
