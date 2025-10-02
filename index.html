@@ -1,938 +1,684 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./index.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <!-- ================= HEADER ================= -->
-      <header>
-        <div class="container1">
-          <!-- Logo -->
-          <div class="logo">
-            <a href="./index.html">Find<span class="logoSpan">House</span></a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
 
-          <!-- Hamburger Menu (for mobile view) -->
-          <button class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+<body>
+  <div class="container">
+    <!-- ================= HEADER ================= -->
+    <header>
+      <div class="container1">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="./index.html">Find<span class="logoSpan">House</span></a>
+        </div>
+
+        <!-- Hamburger Menu (for mobile view) -->
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav class="mainNav" id="mainNav">
+          <ul class="navList">
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./Listings.html">Listings</a></li>
+            <li><a href="./workings.html">How it works</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Buttons -->
+        <div class="headerActions">
+          <button class="searchBtn">
+            <img src="./images/searchIcon.png" alt="search-icon" height="16" width="16" />
           </button>
-
-          <!-- Navigation Menu -->
-          <nav class="mainNav" id="mainNav">
-            <ul class="navList">
-              <li><a href="./index.html" class="active">Home</a></li>
-              <li><a href="./Listings.html">Listings</a></li>
-              <li><a href="./workings.html">How it works</a></li>
-              <li><a href="./about.html">About</a></li>
-            </ul>
-          </nav>
-
-          <!-- Header Buttons -->
-          <div class="headerActions">
-            <button class="searchBtn">
-              <img
-                src="./images/searchIcon.png"
-                alt="search-icon"
-                height="16"
-                width="16"
-              />
-            </button>
-            <button class="login">Login / Register</button>
-            <button class="upload">Upload Property</button>
-          </div>
+          <button class="login">Login / Register</button>
+          <button class="upload">Upload Property</button>
         </div>
-      </header>
-      <section class="hero">
-        <div class="hero-container">
-          <div class="hero-text">
-            <h1>Find Your Next Home Directly From Owners</h1>
-            <p>
-              No agent fees, just direct connections with property owners
-              leaving their apartments in Nigeria.
-            </p>
-          </div>
-
-          <div class="hero-form">
-            <form id="search-form">
-              <!-- Input with validation -->
-              <div class="input-with-icon">
-                <span class="icon">
-                  <img src="./Assets/location.svg" alt="" />
-                </span>
-                <input
-                  type="text"
-                  placeholder="Enter state or city"
-                  id="cityname"
-                />
-                <small>state or city is required</small>
-              </div>
-
-              <!-- TYPE DROPDOWN -->
-              <div class="type-cont">
-                <div class="type-box">
-                  <input
-                    type="text"
-                    id="typeInput"
-                    readonly
-                    placeholder="Any Type"
-                  />
-                </div>
-                <ul class="type-menu">
-                  <li><button type="button">Bungalow</button></li>
-                  <li><button type="button">A Room and Parlour</button></li>
-                  <li><button type="button">Self-con</button></li>
-                  <li><button type="button">Duplex</button></li>
-                  <li><button type="button">Flat</button></li>
-                </ul>
-              </div>
-
-              <!-- PRICE DROPDOWN -->
-              <div class="prices">
-                <label for="price">Price:</label>
-
-                <div class="dropdown">
-                  <div class="dropdown-box">
-                    <input
-                      type="text"
-                      id="service"
-                      readonly
-                      placeholder="₦0 - ₦1,000,000"
-                    />
-                    <img
-                      src="./Assets/dropdown.svg"
-                      alt="arrow"
-                      class="dropdown-arrow"
-                    />
-                  </div>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <button type="button">₦1,5M - ₦5M</button>
-                    </li>
-                    <li>
-                      <button type="button">₦5.5M - ₦10M</button>
-                    </li>
-                    <li>
-                      <button type="button">₦10.5M - ₦30M</button>
-                    </li>
-                    <li>
-                      <button type="button">₦30.5M - ₦50M</button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="input-btn">
-                <button type="submit">
-                  <img src="./Assets/searchh.svg" alt="" />Search
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <div class="stats">
-            <div class="stat-card">
-              <h2>2,500+</h2>
-              <p>Homes Listed</p>
-            </div>
-            <div class="stat-card">
-              <h2>10,000+</h2>
-              <p>Users Active</p>
-            </div>
-            <div class="stat-card">
-              <h2>20+</h2>
-              <p>Cities Covered</p>
-            </div>
-            <div class="stat-card">
-              <h2>₦500M+</h2>
-              <p>Transactions</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section3">
-        <div class="section3-container">
-          <div class="section3-text">
-            <h2>Recent Properties</h2>
-            <p>Explore some of the latest properties listed to our platform.</p>
-          </div>
-
-          <div class="property-grid">
-            <div class="properties-card">
-              <div class="property-img">
-                <div class="img-cont">
-                  <img src="./Assets/1 Bedroom.png" alt="" />
-                </div>
-                <div
-                  class="love-icon"
-                  id="favIcon"
-                  onclick="toggleFavorite(this)"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="heart"
-                  >
-                    <path
-                      d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="describe">
-                <h4>1 Bedroom</h4>
-                <p>Abeokuta, Ogun</p>
-                <div class="about">
-                  <h5>₦500,001<span>/ year</span></h5>
-                  <div class="para">
-                    <p>0 bed</p>
-                    <p>0 bath</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="properties-card">
-              <div class="property-img">
-                <div class="img-cont">
-                  <img src="./Assets/3 Bedroom.png" alt="" />
-                </div>
-                <div
-                  class="love-icon"
-                  id="favIcon"
-                  onclick="toggleFavorite(this)"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="heart"
-                  >
-                    <path
-                      d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="describe">
-                <h4>3 Bedroom</h4>
-                <p>Abeokuta, Ogun</p>
-                <div class="about">
-                  <h5>₦3,000,000<span>/ year</span></h5>
-                  <div class="para">
-                    <p>0 bed</p>
-                    <p>0 bath</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="properties-card">
-              <div class="property-img">
-                <div class="img-cont">
-                  <img src="./Assets/3 Bedrooms.png" alt="" />
-                </div>
-                <div
-                  class="love-icon"
-                  id="favIcon"
-                  onclick="toggleFavorite(this)"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="heart"
-                  >
-                    <path
-                      d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="describe">
-                <h4>3 Bedrooms</h4>
-                <p>Abeokuta, Ogun</p>
-                <div class="about">
-                  <h5>₦1,500,000<span>/ year</span></h5>
-                  <div class="para">
-                    <p>0 bed</p>
-                    <p>0 bath</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="properties-card">
-              <div class="property-img">
-                <div class="img-cont">
-                  <img src="./Assets/4 bedrooms.png" alt="" />
-                </div>
-                <div
-                  class="love-icon"
-                  id="favIcon"
-                  onclick="toggleFavorite(this)"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="heart"
-                  >
-                    <path
-                      d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="describe">
-                <h4>4 Bedroom</h4>
-                <p>Abeokuta, Ogun</p>
-                <div class="about">
-                  <h5>₦50,000,000<span>/ year</span></h5>
-                  <div class="para">
-                    <p>0 bed</p>
-                    <p>0 bath</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="properties-card">
-              <div class="property-img">
-                <div class="img-cont">
-                  <img src="./Assets/1 Room And Parlour.png" alt="" />
-                </div>
-                <div
-                  class="love-icon"
-                  id="favIcon"
-                  onclick="toggleFavorite(this)"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="heart"
-                  >
-                    <path
-                      d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="describe">
-                <h4>1 room And Parlour</h4>
-                <p>Abeokuta, Ogun</p>
-                <div class="about">
-                  <h5>₦₦3,000,000<span>/ year</span></h5>
-                  <div class="para">
-                    <p>1 bed</p>
-                    <p>2 bath</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="properties-card">
-              <div class="property-img">
-                <div class="img-cont">
-                  <img src="./Assets/2 Bedroom Flat.png" alt="" />
-                </div>
-                <div
-                  class="love-icon"
-                  id="favIcon"
-                  onclick="toggleFavorite(this)"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="heart"
-                  >
-                    <path
-                      d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="describe">
-                <h4>2 Bedroom Flat</h4>
-                <p>Abeokuta, Ogun</p>
-                <div class="about">
-                  <h5>₦10,000,000<span>/ year</span></h5>
-                  <div class="para">
-                    <p>2 bed</p>
-                    <p>2 bath</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <button class="view-btn">
-              View All Properties<img
-                src="./images/right_arrow.png"
-                alt="right-arrow"
-                height="16px"
-                width="16px"
-              />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="section4">
-        <div class="section4-container">
-          <div class="section4-text">
-            <h2>How FindHouse Works</h2>
-            <p>
-              Our simple process connects you directly with property owners,
-              eliminating the agent middleman and saving you money.
-            </p>
-          </div>
-          <div class="section4-cards">
-            <div class="section4-card">
-              <img
-                src="./images/house-icon.png"
-                alt="house-icon"
-                width="40px"
-                height="40px"
-              />
-              <h3>Owners List Properties</h3>
-              <p>
-                Property owners list their properties on our platform with
-                comprehensive details, photos, and rental terms.
-              </p>
-            </div>
-            <div class="section4-card">
-              <img
-                src="./images/safe-guard.png"
-                alt="safe-guard-icon"
-                width="40px"
-                height="40px"
-              />
-              <h3>Direct Connections</h3>
-              <p>
-                We connect you directly with property owners. Browse listings,
-                schedule viewings, and negotiate without agent interference.
-              </p>
-            </div>
-            <div class="section4-card">
-              <img
-                src="./images/growth.png"
-                alt="growth-icon"
-                width="40px"
-                height="40px"
-              />
-              <h3>Premium Visibility</h3>
-              <p>
-                Property owners can prioritize their listings for increased
-                visibility, helping them find the perfect tenant faster.
-              </p>
-            </div>
-          </div>
-          <div>
-            <button class="learn-more-btn">
-              Learn more about our process<img
-                src="./images/right_arrow.png"
-                alt="right-arrow"
-                width="16px"
-                height="16px"
-              />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="section5">
-        <div class="section5-container">
-          <div class="section5-text">
-            <h2>Featured Properties</h2>
-            <p>
-              Browse our curated selection of available properties across
-              Nigeria.
-            </p>
-          </div>
-
-          <div class="property-grid">
-            <div class="properties-card">
-              <div class="property-img">
-                <div class="img-cont">
-                  <img src="./images/property_7.jpg" alt="" />
-                </div>
-                <div
-                  class="love-icon"
-                  id="favIcon"
-                  onclick="toggleFavorite(this)"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="heart"
-                  >
-                    <path
-                      d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="describe">
-                <h4>3 Bedroom Apartment in...</h4>
-                <p>Lekki Phase 1, Lagos</p>
-                <div class="about">
-                  <h5>₦1,500,000<span>/ year</span></h5>
-                  <div class="para">
-                    <p>3 bed</p>
-                    <p>2 bath</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="properties-card">
-              <div class="property-img">
-                <div class="img-cont">
-                  <img src="./images/property_8.jpg" alt="" />
-                </div>
-                <div
-                  class="love-icon"
-                  id="favIcon"
-                  onclick="toggleFavorite(this)"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="heart"
-                  >
-                    <path
-                      d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="describe">
-                <h4>Luxury 2 Bedroom Flat in...</h4>
-                <p>Ikeja GRA, Lagos</p>
-                <div class="about">
-                  <h5>₦1,200,000<span>/ year</span></h5>
-                  <div class="para">
-                    <p>2 bed</p>
-                    <p>2 bath</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="properties-card">
-              <div class="property-img">
-                <div class="img-cont">
-                  <img src="./images/property_9.jpg" alt="" />
-                </div>
-                <div
-                  class="love-icon"
-                  id="favIcon"
-                  onclick="toggleFavorite(this)"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="heart"
-                  >
-                    <path
-                      d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="describe">
-                <h4>Modern Studio Apartment</h4>
-                <p>Victoria Island, Lagos</p>
-                <div class="about">
-                  <h5>₦950,000<span>/ year</span></h5>
-                  <div class="para">
-                    <p>1 bed</p>
-                    <p>1 bath</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="properties-card">
-              <div class="property-img">
-                <div class="img-cont">
-                  <img src="./images/property_10.jpg" alt="" />
-                </div>
-                <div
-                  class="love-icon"
-                  id="favIcon"
-                  onclick="toggleFavorite(this)"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="heart"
-                  >
-                    <path
-                      d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="describe">
-                <h4>Spacious 4 Bedroom Dupl...</h4>
-                <p>Ajah, Lagos</p>
-                <div class="about">
-                  <h5>₦2,500,000<span>/ year</span></h5>
-                  <div class="para">
-                    <p>4 bed</p>
-                    <p>3 bath</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <button class="view-all-btn">
-              View All Properties<img
-                src="./images/right_arrow.png"
-                alt="right-arrow"
-                height="16px"
-                width="16px"
-              />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="section6">
-        <div class="section6-container">
-          <div class="section6-texts">
-            <h2>The Smarter Way to Rent in Nigeria</h2>
-            <p>
-              FindHouse eliminates the traditional agent model, creating a more
-              transparent, affordable, and rewarding experience for both renters
-              and those leaving properties.
-            </p>
-            <div class="section6-h6">
-              <h6>
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  height="20px"
-                  width="20px"
-                />Save 15-30% on rental costs without agent fees
-              </h6>
-              <h6>
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  height="20px"
-                  width="20px"
-                />Direct communication with property owners
-              </h6>
-              <h6>
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  height="20px"
-                  width="20px"
-                />Verified listings with detailed information
-              </h6>
-              <h6>
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  height="20px"
-                  width="20px"
-                />Secure payment processing
-              </h6>
-              <h6>
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  height="20px"
-                  width="20px"
-                />Support throughout your rental journey
-              </h6>
-            </div>
-            <button>Find your perfect home</button>
-          </div>
-
-          <div class="section6-img">
-            <img src="./images/setup.png" alt="setup" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section7">
-        <div class="section7-container">
-          <div class="section7-text">
-            <h2>What Our Users Say</h2>
-            <p>
-              Join thousands of satisfied users who have found their perfect
-              home or made extra money through FindHouse.
-            </p>
-          </div>
-
-          <div class="section7-cards">
-            <div class="section7-card">
-              <img
-                src="./images/stars.png"
-                alt="stars"
-                width="318px"
-                height="20px"
-              />
-              <p>
-                "I found my apartment in just two days and saved over ₦300,000
-                that would have gone to agents. The process was incredibly
-                smooth!"
-              </p>
-              <div class="person-details">
-                <img
-                  src="./images/person_1.png"
-                  alt="person_1"
-                  width="48px"
-                  height="48px"
-                />
-                <div class="person-description">
-                  <h5>Chioma Okafor</h5>
-                  <h6>Lekki, Lagos</h6>
-                </div>
-              </div>
-            </div>
-
-            <div class="section7-card">
-              <img
-                src="./images/stars.png"
-                alt="stars"
-                width="318px"
-                height="20px"
-              />
-              <p>
-                "As someone moving out, I made an extra ₦150,000 by listing my
-                apartment here. I was connected with a new tenant within a
-                week."
-              </p>
-              <div class="person-details">
-                <img
-                  src="./images/person2.png"
-                  alt="person_2"
-                  width="48px"
-                  height="48px"
-                />
-                <div class="person-description">
-                  <h5>Emmanuel Adeyemi</h5>
-                  <h6>Abuja</h6>
-                </div>
-              </div>
-            </div>
-
-            <div class="section7-card">
-              <img
-                src="./images/stars.png"
-                alt="stars"
-                width="318px"
-                height="20px"
-              />
-              <p>
-                "The transparency on this platform is refreshing. No hidden
-                fees, no agent drama - just direct connections with honest
-                property owners."
-              </p>
-              <div class="person-details">
-                <img
-                  src="./images/person_1.png"
-                  alt="person_3"
-                  width="48px"
-                  height="48px"
-                />
-                <div class="person-description">
-                  <h5>Amina Ibrahim</h5>
-                  <h6>Port Harcourt</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section8">
-        <div class="section8-container">
-          <h2>Ready to Transform Your Rental Experience?</h2>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Find Your Next Home Directly From Owners</h1>
           <p>
-            Join FindHouse today and be part of the rental revolution in
-            Nigeria. Save money, make money, and find your perfect home directly
-            from owners.
+            No agent fees, just direct connections with property owners
+            leaving their apartments in Nigeria.
           </p>
-          <div class="section8-btns">
-            <button class="browse-properties-btn">Browse Properties</button>
-            <button class="list-properties-btn">List Your Property</button>
-          </div>
         </div>
-      </section>
 
-      <footer>
-        <div class="container6">
-          <div class="footer-links">
-            <div class="description">
-              <div class="logo">
-                <a href="#">Find<span class="logospan">House</span></a>
-              </div>
-              <p>
-                Connecting people looking for houses directly with property
-                owners, eliminating agent fees in Nigeria.
-              </p>
-              <div class="descriptionicons">
-                <div class="firsticon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.0002 1.66675H12.5002C11.3951 1.66675 10.3353 2.10573 9.55388 2.88714C8.77248 3.66854 8.3335 4.72835 8.3335 5.83341V8.33341H5.8335V11.6667H8.3335V18.3334H11.6668V11.6667H14.1668L15.0002 8.33341H11.6668V5.83341C11.6668 5.6124 11.7546 5.40044 11.9109 5.24416C12.0672 5.08788 12.2791 5.00008 12.5002 5.00008H15.0002V1.66675Z"
-                      stroke="#64748B"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-                <div class="secondicon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18.3332 3.33343C18.3332 3.33343 17.7498 5.08343 16.6665 6.16677C17.9998 14.5001 8.83317 20.5834 1.6665 15.8334C3.49984 15.9168 5.33317 15.3334 6.6665 14.1668C2.49984 12.9168 0.416504 8.0001 2.49984 4.16677C4.33317 6.33343 7.1665 7.58343 9.99984 7.5001C9.24984 4.0001 13.3332 2.0001 15.8332 4.33343C16.7498 4.33343 18.3332 3.33343 18.3332 3.33343Z"
-                      stroke="#64748B"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-                <div class="thirdicon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.1665 1.66675H5.83317C3.53198 1.66675 1.6665 3.53223 1.6665 5.83341V14.1667C1.6665 16.4679 3.53198 18.3334 5.83317 18.3334H14.1665C16.4677 18.3334 18.3332 16.4679 18.3332 14.1667V5.83341C18.3332 3.53223 16.4677 1.66675 14.1665 1.66675Z"
-                      stroke="#64748B"
-                      stroke-width="1.66667"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M13.3333 9.47501C13.4361 10.1685 13.3176 10.8769 12.9947 11.4992C12.6718 12.1215 12.1609 12.6262 11.5346 12.9414C10.9083 13.2566 10.1986 13.3663 9.50641 13.255C8.81419 13.1436 8.17472 12.8167 7.67895 12.321C7.18318 11.8252 6.85636 11.1857 6.74497 10.4935C6.63359 9.8013 6.74331 9.09159 7.05852 8.46532C7.37374 7.83905 7.87841 7.32812 8.50074 7.00521C9.12307 6.68229 9.83138 6.56383 10.5249 6.66667C11.2324 6.77158 11.8873 7.10123 12.393 7.60693C12.8987 8.11263 13.2283 8.76757 13.3333 9.47501Z"
-                      stroke="#64748B"
-                      stroke-width="1.66667"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M14.5835 5.41675H14.5918"
-                      stroke="#64748B"
-                      stroke-width="1.66667"
-                    />
-                  </svg>
-                </div>
-              </div>
+        <div class="hero-form">
+          <form id="search-form">
+            <!-- Input with validation -->
+            <div class="input-with-icon">
+              <span class="icon">
+                <img src="./Assets/location.svg" alt="" />
+              </span>
+              <input type="text" placeholder="Enter state or city" id="cityname" />
+              <small>state or city is required</small>
             </div>
-            <div class="quicklinks">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./Listings.html">Listings</a></li>
-                <li><a href="./workings.html">How It Works</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="">Contact</a></li>
+
+            <!-- TYPE DROPDOWN -->
+            <div class="type-cont">
+              <div class="type-box">
+                <input type="text" id="typeInput" readonly placeholder="Any Type" />
+              </div>
+              <ul class="type-menu">
+                <li><button type="button">Bungalow</button></li>
+                <li><button type="button">A Room and Parlour</button></li>
+                <li><button type="button">Self-con</button></li>
+                <li><button type="button">Duplex</button></li>
+                <li><button type="button">Flat</button></li>
               </ul>
             </div>
-            <div class="resources">
-              <h4>Resources</h4>
-              <ul>
-                <li><a href="">Terms & Conditions</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Support</a></li>
-                <li><a href="">Blog</a></li>
-              </ul>
-            </div>
-            <div class="contacts">
-              <h4>Contacts</h4>
-              <div class="contdiv">
-                <img src="./Assets/mail.svg" alt="" />
-                <p>info@findhouse.com</p>
-              </div>
-              <div>
-                <img src="./Assets/phonecall.svg" alt="" />
-                <p>+234 123 456 7890</p>
-              </div>
-            </div>
-          </div>
-          <div class="last-cont">
-            <div class="last-div">
-              <div class="organization">
-                © 2025 FindHouse.com. All rights reserved.
-              </div>
-              <div class="terms">
-                <ul>
-                  <li>Terms</li>
-                  <li>Privacy</li>
-                  <li>Cookies</li>
+
+            <!-- PRICE DROPDOWN -->
+            <div class="prices">
+              <label for="price">Price:</label>
+              <div class="dropdown">
+                <div class="dropdown-box">
+                  <input type="text" id="service" readonly placeholder="₦0 - ₦1,000,000" />
+                  <img src="./Assets/dropdown.svg" alt="arrow" class="dropdown-arrow" />
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button">₦1,500,000 - ₦5,000,000</button></li>
+                  <li><button type="button">₦5,500,000 - ₦10,000,000</button></li>
+                  <li><button type="button">₦10,500,000 - ₦30,000,000</button></li>
+                  <li><button type="button">₦30,500,000 - ₦50,000,000</button></li>
                 </ul>
               </div>
             </div>
+
+            <div class="input-btn">
+              <button type="submit">
+                <img src="./Assets/searchh.svg" alt="" />Search
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <h2>2,500+</h2>
+            <p>Homes Listed</p>
+          </div>
+          <div class="stat-card">
+            <h2>10,000+</h2>
+            <p>Users Active</p>
+          </div>
+          <div class="stat-card">
+            <h2>20+</h2>
+            <p>Cities Covered</p>
+          </div>
+          <div class="stat-card">
+            <h2>₦500M+</h2>
+            <p>Transactions</p>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </section>
 
-    <script src="./index.js" defer></script>
-  </body>
+
+    <section class="section3">
+      <div class="section3-container">
+        <div class="section3-text">
+          <h2>Recent Properties</h2>
+          <p>Explore some of the latest properties listed to our platform.</p>
+        </div>
+
+        <div class="property-grid">
+          <div class="properties-card">
+            <div class="property-img">
+              <div class="img-cont">
+                <img src="./Assets/1 Bedroom.png" alt="" />
+              </div>
+              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="heart">
+                  <path
+                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
+                    stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+            <div class="describe">
+              <h4>1 Bedroom</h4>
+              <p>Abeokuta, Ogun</p>
+              <div class="about">
+                <h5>₦500,001<span>/ year</span></h5>
+                <div class="para">
+                  <p>0 bed</p>
+                  <p>0 bath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <div class="property-img">
+              <div class="img-cont">
+                <img src="./Assets/3 Bedroom.png" alt="" />
+              </div>
+              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="heart">
+                  <path
+                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
+                    stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+            <div class="describe">
+              <h4>3 Bedroom</h4>
+              <p>Abeokuta, Ogun</p>
+              <div class="about">
+                <h5>₦3,000,000<span>/ year</span></h5>
+                <div class="para">
+                  <p>0 bed</p>
+                  <p>0 bath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <div class="property-img">
+              <div class="img-cont">
+                <img src="./Assets/3 Bedrooms.png" alt="" />
+              </div>
+              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="heart">
+                  <path
+                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
+                    stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+            <div class="describe">
+              <h4>3 Bedrooms</h4>
+              <p>Abeokuta, Ogun</p>
+              <div class="about">
+                <h5>₦1,500,000<span>/ year</span></h5>
+                <div class="para">
+                  <p>0 bed</p>
+                  <p>0 bath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <div class="property-img">
+              <div class="img-cont">
+                <img src="./Assets/4 bedrooms.png" alt="" />
+              </div>
+              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="heart">
+                  <path
+                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
+                    stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+            <div class="describe">
+              <h4>4 Bedroom</h4>
+              <p>Abeokuta, Ogun</p>
+              <div class="about">
+                <h5>₦50,000,000<span>/ year</span></h5>
+                <div class="para">
+                  <p>0 bed</p>
+                  <p>0 bath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <div class="property-img">
+              <div class="img-cont">
+                <img src="./Assets/1 Room And Parlour.png" alt="" />
+              </div>
+              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="heart">
+                  <path
+                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
+                    stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+            <div class="describe">
+              <h4>1 room And Parlour</h4>
+              <p>Abeokuta, Ogun</p>
+              <div class="about">
+                <h5>₦₦3,000,000<span>/ year</span></h5>
+                <div class="para">
+                  <p>1 bed</p>
+                  <p>2 bath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <div class="property-img">
+              <div class="img-cont">
+                <img src="./Assets/2 Bedroom Flat.png" alt="" />
+              </div>
+              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="heart">
+                  <path
+                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
+                    stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+            <div class="describe">
+              <h4>2 Bedroom Flat</h4>
+              <p>Abeokuta, Ogun</p>
+              <div class="about">
+                <h5>₦10,000,000<span>/ year</span></h5>
+                <div class="para">
+                  <p>2 bed</p>
+                  <p>2 bath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="view-btn">
+            View All Properties<img src="./images/right_arrow.png" alt="right-arrow" height="16px" width="16px" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section4">
+      <div class="section4-container">
+        <div class="section4-text">
+          <h2>How FindHouse Works</h2>
+          <p>
+            Our simple process connects you directly with property owners,
+            eliminating the agent middleman and saving you money.
+          </p>
+        </div>
+        <div class="section4-cards">
+          <div class="section4-card">
+            <img src="./images/house-icon.png" alt="house-icon" width="40px" height="40px" />
+            <h3>Owners List Properties</h3>
+            <p>
+              Property owners list their properties on our platform with
+              comprehensive details, photos, and rental terms.
+            </p>
+          </div>
+          <div class="section4-card">
+            <img src="./images/safe-guard.png" alt="safe-guard-icon" width="40px" height="40px" />
+            <h3>Direct Connections</h3>
+            <p>
+              We connect you directly with property owners. Browse listings,
+              schedule viewings, and negotiate without agent interference.
+            </p>
+          </div>
+          <div class="section4-card">
+            <img src="./images/growth.png" alt="growth-icon" width="40px" height="40px" />
+            <h3>Premium Visibility</h3>
+            <p>
+              Property owners can prioritize their listings for increased
+              visibility, helping them find the perfect tenant faster.
+            </p>
+          </div>
+        </div>
+        <div>
+          <button class="learn-more-btn">
+            Learn more about our process<img src="./images/right_arrow.png" alt="right-arrow" width="16px"
+              height="16px" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section5">
+      <div class="section5-container">
+        <div class="section5-text">
+          <h2>Featured Properties</h2>
+          <p>
+            Browse our curated selection of available properties across
+            Nigeria.
+          </p>
+        </div>
+
+        <div class="property-grid">
+          <div class="properties-card">
+            <div class="property-img">
+              <div class="img-cont">
+                <img src="./images/property_7.jpg" alt="" />
+              </div>
+              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="heart">
+                  <path
+                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
+                    stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+            <div class="describe">
+              <h4>3 Bedroom Apartment in...</h4>
+              <p>Lekki Phase 1, Lagos</p>
+              <div class="about">
+                <h5>₦1,500,000<span>/ year</span></h5>
+                <div class="para">
+                  <p>3 bed</p>
+                  <p>2 bath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <div class="property-img">
+              <div class="img-cont">
+                <img src="./images/property_8.jpg" alt="" />
+              </div>
+              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="heart">
+                  <path
+                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
+                    stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+            <div class="describe">
+              <h4>Luxury 2 Bedroom Flat in...</h4>
+              <p>Ikeja GRA, Lagos</p>
+              <div class="about">
+                <h5>₦1,200,000<span>/ year</span></h5>
+                <div class="para">
+                  <p>2 bed</p>
+                  <p>2 bath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <div class="property-img">
+              <div class="img-cont">
+                <img src="./images/property_9.jpg" alt="" />
+              </div>
+              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="heart">
+                  <path
+                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
+                    stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+            <div class="describe">
+              <h4>Modern Studio Apartment</h4>
+              <p>Victoria Island, Lagos</p>
+              <div class="about">
+                <h5>₦950,000<span>/ year</span></h5>
+                <div class="para">
+                  <p>1 bed</p>
+                  <p>1 bath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <div class="property-img">
+              <div class="img-cont">
+                <img src="./images/property_10.jpg" alt="" />
+              </div>
+              <div class="love-icon" id="favIcon" onclick="toggleFavorite(this)">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="heart">
+                  <path
+                    d="M15.8334 11.6667C17.0751 10.45 18.3334 8.99167 18.3334 7.08333C18.3334 5.86776 17.8505 4.70197 16.991 3.84243C16.1314 2.98289 14.9657 2.5 13.7501 2.5C12.2834 2.5 11.2501 2.91667 10.0001 4.16667C8.75008 2.91667 7.71675 2.5 6.25008 2.5C5.03451 2.5 3.86872 2.98289 3.00918 3.84243C2.14963 4.70197 1.66675 5.86776 1.66675 7.08333C1.66675 9 2.91675 10.4583 4.16675 11.6667L10.0001 17.5L15.8334 11.6667Z"
+                    stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+            <div class="describe">
+              <h4>Spacious 4 Bedroom Dupl...</h4>
+              <p>Ajah, Lagos</p>
+              <div class="about">
+                <h5>₦2,500,000<span>/ year</span></h5>
+                <div class="para">
+                  <p>4 bed</p>
+                  <p>3 bath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="view-all-btn">
+            View All Properties<img src="./images/right_arrow.png" alt="right-arrow" height="16px" width="16px" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section6">
+      <div class="section6-container">
+        <div class="section6-texts">
+          <h2>The Smarter Way to Rent in Nigeria</h2>
+          <p>
+            FindHouse eliminates the traditional agent model, creating a more
+            transparent, affordable, and rewarding experience for both renters
+            and those leaving properties.
+          </p>
+          <div class="section6-h6">
+            <h6>
+              <img src="./images/checkmark.png" alt="checkmark" height="20px" width="20px" />Save 15-30% on rental costs
+              without agent fees
+            </h6>
+            <h6>
+              <img src="./images/checkmark.png" alt="checkmark" height="20px" width="20px" />Direct communication with
+              property owners
+            </h6>
+            <h6>
+              <img src="./images/checkmark.png" alt="checkmark" height="20px" width="20px" />Verified listings with
+              detailed information
+            </h6>
+            <h6>
+              <img src="./images/checkmark.png" alt="checkmark" height="20px" width="20px" />Secure payment processing
+            </h6>
+            <h6>
+              <img src="./images/checkmark.png" alt="checkmark" height="20px" width="20px" />Support throughout your
+              rental journey
+            </h6>
+          </div>
+          <button>Find your perfect home</button>
+        </div>
+
+        <div class="section6-img">
+          <img src="./images/setup.png" alt="setup" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section7">
+      <div class="section7-container">
+        <div class="section7-text">
+          <h2>What Our Users Say</h2>
+          <p>
+            Join thousands of satisfied users who have found their perfect
+            home or made extra money through FindHouse.
+          </p>
+        </div>
+
+        <div class="section7-cards">
+          <div class="section7-card">
+            <img src="./images/stars.png" alt="stars" width="318px" height="20px" />
+            <p>
+              "I found my apartment in just two days and saved over ₦300,000
+              that would have gone to agents. The process was incredibly
+              smooth!"
+            </p>
+            <div class="person-details">
+              <img src="./images/person_1.png" alt="person_1" width="48px" height="48px" />
+              <div class="person-description">
+                <h5>Chioma Okafor</h5>
+                <h6>Lekki, Lagos</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="section7-card">
+            <img src="./images/stars.png" alt="stars" width="318px" height="20px" />
+            <p>
+              "As someone moving out, I made an extra ₦150,000 by listing my
+              apartment here. I was connected with a new tenant within a
+              week."
+            </p>
+            <div class="person-details">
+              <img src="./images/person2.png" alt="person_2" width="48px" height="48px" />
+              <div class="person-description">
+                <h5>Emmanuel Adeyemi</h5>
+                <h6>Abuja</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="section7-card">
+            <img src="./images/stars.png" alt="stars" width="318px" height="20px" />
+            <p>
+              "The transparency on this platform is refreshing. No hidden
+              fees, no agent drama - just direct connections with honest
+              property owners."
+            </p>
+            <div class="person-details">
+              <img src="./images/person_1.png" alt="person_3" width="48px" height="48px" />
+              <div class="person-description">
+                <h5>Amina Ibrahim</h5>
+                <h6>Port Harcourt</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section8">
+      <div class="section8-container">
+        <h2>Ready to Transform Your Rental Experience?</h2>
+        <p>
+          Join FindHouse today and be part of the rental revolution in
+          Nigeria. Save money, make money, and find your perfect home directly
+          from owners.
+        </p>
+        <div class="section8-btns">
+          <button class="browse-properties-btn">Browse Properties</button>
+          <button class="list-properties-btn">List Your Property</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container6">
+        <div class="footer-links">
+          <div class="description">
+            <div class="logo">
+              <a href="#">Find<span class="logospan">House</span></a>
+            </div>
+            <p>
+              Connecting people looking for houses directly with property
+              owners, eliminating agent fees in Nigeria.
+            </p>
+            <div class="descriptionicons">
+              <div class="firsticon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.0002 1.66675H12.5002C11.3951 1.66675 10.3353 2.10573 9.55388 2.88714C8.77248 3.66854 8.3335 4.72835 8.3335 5.83341V8.33341H5.8335V11.6667H8.3335V18.3334H11.6668V11.6667H14.1668L15.0002 8.33341H11.6668V5.83341C11.6668 5.6124 11.7546 5.40044 11.9109 5.24416C12.0672 5.08788 12.2791 5.00008 12.5002 5.00008H15.0002V1.66675Z"
+                    stroke="#64748B" stroke-width="1.66667" />
+                </svg>
+              </div>
+              <div class="secondicon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.3332 3.33343C18.3332 3.33343 17.7498 5.08343 16.6665 6.16677C17.9998 14.5001 8.83317 20.5834 1.6665 15.8334C3.49984 15.9168 5.33317 15.3334 6.6665 14.1668C2.49984 12.9168 0.416504 8.0001 2.49984 4.16677C4.33317 6.33343 7.1665 7.58343 9.99984 7.5001C9.24984 4.0001 13.3332 2.0001 15.8332 4.33343C16.7498 4.33343 18.3332 3.33343 18.3332 3.33343Z"
+                    stroke="#64748B" stroke-width="1.66667" />
+                </svg>
+              </div>
+              <div class="thirdicon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.1665 1.66675H5.83317C3.53198 1.66675 1.6665 3.53223 1.6665 5.83341V14.1667C1.6665 16.4679 3.53198 18.3334 5.83317 18.3334H14.1665C16.4677 18.3334 18.3332 16.4679 18.3332 14.1667V5.83341C18.3332 3.53223 16.4677 1.66675 14.1665 1.66675Z"
+                    stroke="#64748B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M13.3333 9.47501C13.4361 10.1685 13.3176 10.8769 12.9947 11.4992C12.6718 12.1215 12.1609 12.6262 11.5346 12.9414C10.9083 13.2566 10.1986 13.3663 9.50641 13.255C8.81419 13.1436 8.17472 12.8167 7.67895 12.321C7.18318 11.8252 6.85636 11.1857 6.74497 10.4935C6.63359 9.8013 6.74331 9.09159 7.05852 8.46532C7.37374 7.83905 7.87841 7.32812 8.50074 7.00521C9.12307 6.68229 9.83138 6.56383 10.5249 6.66667C11.2324 6.77158 11.8873 7.10123 12.393 7.60693C12.8987 8.11263 13.2283 8.76757 13.3333 9.47501Z"
+                    stroke="#64748B" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M14.5835 5.41675H14.5918" stroke="#64748B" stroke-width="1.66667" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="quicklinks">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./Listings.html">Listings</a></li>
+              <li><a href="./workings.html">How It Works</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="resources">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Support</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <h4>Contacts</h4>
+            <div class="contdiv">
+              <img src="./Assets/mail.svg" alt="" />
+              <p>info@findhouse.com</p>
+            </div>
+            <div>
+              <img src="./Assets/phonecall.svg" alt="" />
+              <p>+234 123 456 7890</p>
+            </div>
+          </div>
+        </div>
+        <div class="last-cont">
+          <div class="last-div">
+            <div class="organization">
+              © 2025 FindHouse.com. All rights reserved.
+            </div>
+            <div class="terms">
+              <ul>
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Cookies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./index.js" defer></script>
+</body>
+
 </html>
