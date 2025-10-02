@@ -692,6 +692,7 @@ form button {
   .stats {
     flex-direction: column;
     gap: 16px;
+    display: none;
   }
   .stat-card {
     width: 100%;
