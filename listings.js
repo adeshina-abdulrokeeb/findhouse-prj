@@ -47,10 +47,6 @@ mainNav.addEventListener("click", (e) => {
 
 //Form Validation
 
-// function formatFieldName(input) {
-//   return input.id.charAt(0).toUppercase() + input.id.slice(1);
-// }
-
 document.getElementById("search-form").addEventListener("submit", function (e) {
   const input = document.getElementById("cityname");
   const errorMsg = input.nextElementSibling;

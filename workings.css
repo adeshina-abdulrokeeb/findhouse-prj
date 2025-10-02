@@ -651,6 +651,12 @@ nav a.active:hover {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  border-radius: 16px;
+}
+
+.Faq-card:hover {
+ backdrop-filter: blur(10px) brightness(98%);
+   cursor: pointer;
 }
 
 .QandA {
