@@ -2045,6 +2045,7 @@ form button {
   color: #0f172a;
   box-shadow: 0 8px 20px rgba(0,  0,  0,  0.15);
 }
+
 .container6 {
   padding: 32px;
   width: 88.89%;
@@ -2151,4 +2152,103 @@ footer {
 }
 .logo span {
   color: #0080ff;
+}
+@media screen and (max-width: 1240px) {
+  .footer-links {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 48px;
+  }
+  .description p {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .last-div {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  .last-div ul {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 675px) {
+  .footer-links {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container6 {
+    width: 95%;
+    padding: 24px;
+  }
+  .description p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .footer-links h4 {
+    font-size: 15px;
+  }
+  .last-div {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 475px) {
+  .footer-links {
+    gap: 24px;
+  }
+  .last-div ul {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer-links h4 {
+    font-size: 14px;
+  }
+  .organization {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer-links {
+    gap: 20px;
+  }
+  .description p {
+    font-size: 12px;
+  }
+  .last-div ul {
+    gap: 12px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container6 {
+    width: 100%;
+    padding: 16px;
+  }
+  .footer-links {
+    gap: 16px;
+  }
+  .organization {
+    font-size: 12px;
+  }
 }
