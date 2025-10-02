@@ -937,7 +937,7 @@ footer {
   .hamburger {
     display: flex;
     position: absolute;
-    right: 16px;
+    right: 32px;
   }
   .property-grid {
     grid-template-columns: repeat(2, 1fr);
