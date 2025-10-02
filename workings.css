@@ -150,6 +150,7 @@ nav a.active:hover {
 .hamburger span {
   display: block;
   width: 100%;
+  margin-bottom: 3px;
   height: 3px;
   background: #16181D;
   border-radius: 2px;
@@ -177,9 +178,6 @@ nav a.active:hover {
   display: block;
 }
 @media screen and (max-width: 800px) {
-  .container1 {
-    gap: 10px;
-  }
   .mainNav {
     position: fixed;
     top: 0;
@@ -202,11 +200,16 @@ nav a.active:hover {
   .header-actions {
     display: none;
   }
+  .container1 {
+    position: relative;
+  }
   .hamburger {
     display: flex;
+    position: absolute;
+    right: 16px;
   }
   /* Overlay effect inside nav */
-  /* .mainNav::before {
+  .mainNav::before {
     content: "";
     position: fixed;
     top: 0;
@@ -222,8 +225,9 @@ nav a.active:hover {
   .mainNav.active::before {
     opacity: 1;
     pointer-events: all;
-} */
 }
+}
+
 /* hero-section styling */
 .container2 {
   display: flex;
@@ -262,6 +266,7 @@ nav a.active:hover {
 
 .hero-section p {
   width: 627px;
+  margin: 0 auto;
   font-size: 20px;
   font-family: "Inter Variable", sans-serif;
   font-style: normal;

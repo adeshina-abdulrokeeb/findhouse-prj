@@ -43,6 +43,45 @@ function toggleFavorite(el) {
 //   });
 // });
 
+// ===== Highlight Active Navigation Link =====
+const links = document.querySelectorAll('.navList a');
+const currentURL = window.location.href;
+
+links.forEach(link => {
+  // Check if the link's href matches the current page URL
+  if (link.href === currentURL) {
+    link.classList.add('active'); // Highlight the current page
+  } else {
+    link.classList.remove('active'); // Remove active class from others
+  }
+});
+
+// ===== Mobile Navigation (Hamburger Menu) =====
+const hamburger = document.getElementById("hamburger");
+const mainNav = document.getElementById("mainNav");
+
+// Toggle navigation when hamburger is clicked
+hamburger.addEventListener("click", () => {
+  const isActive = hamburger.classList.toggle("active"); // Animate hamburger
+  mainNav.classList.toggle("active"); // Slide nav menu in/out
+
+  if (isActive) {
+    document.body.classList.add("no-scroll"); // Prevent background scrolling
+  } else {
+    document.body.classList.remove("no-scroll");
+  }
+});
+
+// Close nav when clicking outside menu content (on nav background)
+mainNav.addEventListener("click", (e) => {
+  if (e.target === mainNav) {
+    hamburger.classList.remove("active");
+    mainNav.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  }
+});
+
+
 
 //Form Validation
 
