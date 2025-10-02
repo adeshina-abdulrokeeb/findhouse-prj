@@ -19,42 +19,6 @@ function toggleFavorite(el) {
   }
 }
 
-// const hamburger = document.querySelector(".hamburger");
-// const mainNav = document.querySelector(".mainNav");
-// const overlay = document.querySelector(".overlay");
-
-// hamburger.addEventListener("click", () => {
-//   hamburger.classList.toggle("active");
-//   mainNav.classList.toggle("active");
-//   overlay.classList.toggle("active");
-// });
-
-// overlay.addEventListener("click", () => {
-//   hamburger.classList.remove("active");
-//   mainNav.classList.remove("active");
-//   overlay.classList.remove("active");
-// });
-
-// document.querySelectorAll(".navList a").forEach((link) => {
-//   link.addEventListener("click", () => {
-//     hamburger.classList.remove("active");
-//     mainNav.classList.remove("active");
-//     overlay.classList.remove("active");
-//   });
-// });
-
-// ===== Highlight Active Navigation Link =====
-const links = document.querySelectorAll('.navList a');
-const currentURL = window.location.href;
-
-links.forEach(link => {
-  // Check if the link's href matches the current page URL
-  if (link.href === currentURL) {
-    link.classList.add('active'); // Highlight the current page
-  } else {
-    link.classList.remove('active'); // Remove active class from others
-  }
-});
 
 // ===== Mobile Navigation (Hamburger Menu) =====
 const hamburger = document.getElementById("hamburger");
@@ -81,20 +45,14 @@ mainNav.addEventListener("click", (e) => {
   }
 });
 
-
-
 //Form Validation
-
-function formatFieldName(input) {
-  return input.id.charAt(0).toUppercase() + input.id.slice(1);
-}
 
 document.getElementById("search-form").addEventListener("submit", function (e) {
   const input = document.getElementById("cityname");
   const errorMsg = input.nextElementSibling;
 
   if (input.value.trim() === "") {
-    e.preventDefault(); // Prevent form submission
+    e.preventDefault(); // Prevent form submission 
     errorMsg.style.visibility = "visible"; // Show the error message
     input.classList.add("error"); // Optional: add a class for styling
   } else {

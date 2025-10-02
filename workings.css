@@ -651,6 +651,12 @@ nav a.active:hover {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  border-radius: 16px;
+}
+
+.Faq-card:hover {
+ backdrop-filter: blur(10px) brightness(98%);
+   cursor: pointer;
 }
 
 .QandA {
@@ -678,6 +684,7 @@ nav a.active:hover {
   font-weight: 400;
   color: rgba(100, 116, 139, 1);
   width: 274px;
+  line-height: 20px;
 }
 
 .descriptionicons {
@@ -811,8 +818,13 @@ align-items: center;
 }
 
 @media (max-width: 900px) {
+   .container1 {
+    position: relative;
+  }
   .hamburger {
-    display: block;
+    display: flex;
+    position: absolute;
+    right: 32px;
   }
   .cards {
     flex-direction: column;

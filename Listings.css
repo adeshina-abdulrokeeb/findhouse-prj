@@ -256,16 +256,12 @@ form {
   backdrop-filter: blur(12px);
   background: white;
 }
-form.error input {
-  border-bottom-color: #e74c3c;
-}
-form.success input {
-  border-bottom-color: #2ecc71;
-}
+
 form.error small {
   visibility: visible;
   color: rgb(231, 70, 75);
 }
+
 small {
   visibility: hidden;
   position: absolute;
@@ -311,11 +307,6 @@ small {
   left: 16px;
 }
 
-select option {
-  text-decoration: none;
-  font-size: 14px;
-  outline: none;
-}
 
 .type-cont {
   width: 100%;
@@ -413,7 +404,7 @@ select option {
 /* Dropdown list */
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+ top: calc(100% + 16px);
   left: 0;
   width: 100%;
   background: white;
@@ -767,6 +758,7 @@ form button {
   font-weight: 400;
   color: rgba(100, 116, 139, 1);
   width: 274px;
+  line-height: 20px;
 }
 
 .descriptionicons {
@@ -874,7 +866,7 @@ footer {
 
 /* Media-Queries */
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   .property-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1082,5 +1074,8 @@ form {
   }
   .organization {
     text-align: center;
+  }
+  .description p {
+    width: 95%;
   }
 }
