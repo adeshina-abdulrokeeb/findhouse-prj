@@ -72,6 +72,15 @@ hamburger.addEventListener("click", () => {
   }
 });
 
+// Close nav when clicking outside menu content (on nav background)
+mainNav.addEventListener("click", (e) => {
+  if (e.target === mainNav) {
+    hamburger.classList.remove("active");
+    mainNav.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  }
+});
+
 
 
 //Form Validation
